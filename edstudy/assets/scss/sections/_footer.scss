@@ -1,0 +1,169 @@
+#footer {
+    background: #242424;
+    padding-bottom: 45px;
+    padding-top: 95px;
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+  
+    .about {
+      p {
+        color: #b3b3b3;
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+      .contact-list {
+        margin-top: 20px;
+        ul {
+          padding-left: 0;
+          li {
+            display: block;
+            color: #949393;
+            font-style: italic;
+            margin-bottom: 7px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  
+    .quick-links {
+      ul {
+        list-style-type: none;
+        padding-left: 0px;
+        li {
+          display: block;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          border-bottom: 1px dashed #3e3e3e;
+          a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #b3b3b3;
+            display: inline-block;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  
+    .popular-courses {
+      .courses-items {
+        .item {
+          display: flex;
+          align-items: center;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+          border-bottom: 1px dashed #3e3e3e;
+  
+          .photo {
+            margin-right: 20px;
+            img {
+              border-radius: 6px;
+            }
+          }
+  
+          .content {
+            h4 {
+              font-size: 14px;
+              color: #bcbcbc;
+              line-height: 22px;
+              font-family: "Roboto", sans-serif;
+              margin-bottom: 5px;
+            }
+  
+            span {
+              display: block;
+              font-size: 14px;
+              color: #b3b3b3;
+              font-style: italic;
+              padding-left: 25px;
+              position: relative;
+              font-weight: 500;
+  
+              &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #b3b3b3;
+                height: 1px;
+                width: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .twitter-feed {
+      ul {
+        list-style-type: none;
+        padding-left: 0px;
+        li {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 20px;
+          i {
+            font-size: 18px;
+            color: #737373;
+            margin-top: 5px;
+            margin-right: 10px;
+          }
+          .content {
+            p {
+              font-size: 14px;
+              color: #b3b3b3;
+              font-style: italic;
+              line-height: 26px;
+              margin-bottom: 5px;
+              font-weight: 500;
+              a {
+                color: $secondary-color;
+              }
+            }
+            span {
+              display: block;
+              font-size: 14px;
+              color: #b3b3b3;
+              font-style: italic;
+              padding-left: 25px;
+              position: relative;
+              font-weight: 500;
+  
+              &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #b3b3b3;
+                height: 1px;
+                width: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  #copyright {
+    background: #1b1b1b;
+    padding: 23px 0;
+    p {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #b3b3b3;
+      margin-bottom: 0;
+    }
+    .photo{
+      text-align: right;
+    }
+  }
+  
