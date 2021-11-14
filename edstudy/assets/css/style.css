@@ -1,3 +1,22 @@
+.btn {
+  border-radius: 0;
+  padding: 21px 25px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  font-size: 14px; }
+
+.btn-primary {
+  background-color: #fee823;
+  color: #1f1f1f;
+  border: none; }
+  .btn-primary:hover {
+    color: #ffffff;
+    background-color: #25cdc9;
+    border: none; }
+
 .back-to-top {
   position: fixed;
   right: 30px;
@@ -552,6 +571,90 @@
       -ms-transform: translateX(0%);
       transform: translateX(0%); }
 
-main {
-  height: 600px;
-  background-color: black; }
+#breadcrumb {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/breadcrumb_bg02.jpg");
+  padding: 240px 0px 175px;
+  z-index: 1; }
+  #breadcrumb:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #1f1f1f;
+    opacity: 0.35;
+    z-index: 0; }
+  #breadcrumb .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #breadcrumb .title h2 {
+      font-size: 60px;
+      color: #fff;
+      margin-bottom: 0;
+      text-transform: uppercase; }
+    #breadcrumb .title nav ol {
+      list-style: none;
+      display: flex; }
+      #breadcrumb .title nav ol a {
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 18px;
+        color: #ffffff; }
+        #breadcrumb .title nav ol a:hover {
+          text-decoration: none; }
+      #breadcrumb .title nav ol li:nth-child(2) a {
+        color: #fee823; }
+      #breadcrumb .title nav ol li:nth-child(2)::before {
+        display: inline-block;
+        padding-right: 0;
+        color: #fff;
+        content: "|";
+        font-weight: 500;
+        margin: 0px 10px; }
+
+#featured-courses {
+  padding: 110px 0px; }
+  #featured-courses .title h2 {
+    margin: 0 0 30px 0; }
+    #featured-courses .title h2 span {
+      color: #25cdc9; }
+  #featured-courses .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 75px 0; }
+    #featured-courses .nav .nav-item a {
+      border: none;
+      line-height: 34px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0 20px;
+      margin: 0 7.5px 10px;
+      background: transparent;
+      color: #767474;
+      border-radius: 30px;
+      transition: 0.3s linear; }
+  #featured-courses .tabb-content .tabb-pane .featured-courses-content {
+    text-align: right;
+    padding-right: 30px; }
+    #featured-courses .tabb-content .tabb-pane .featured-courses-content .ingredients-span {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      margin-bottom: 15px;
+      line-height: 1;
+      color: #767474; }
+    #featured-courses .tabb-content .tabb-pane .featured-courses-content h2 span {
+      color: #25cdc9; }
+    #featured-courses .tabb-content .tabb-pane .featured-courses-content p {
+      color: #7d7d7d; }
+
+@media (max-width: 991.98px) {
+  #breadcrumb .title h2 {
+    font-size: 25px;
+    text-align: center; } }

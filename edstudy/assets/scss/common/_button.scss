@@ -1,0 +1,20 @@
+.btn{
+    border-radius: 0;
+    padding: 21px 25px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: $primary_font_family;
+    border: none;
+    font-size: 14px;
+}
+.btn-primary{
+    background-color: $primary-color;
+    color: $black-color;
+    border: none;
+    &:hover{
+        color: #ffffff;
+        background-color: $secondary-color;
+        border: none;
+    }
+}
