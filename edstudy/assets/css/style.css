@@ -588,14 +588,6 @@
   background-image: url("../img/breadcrumb_bg02.jpg");
   padding: 240px 0px 175px;
   z-index: 1; }
-  #breadcrumb:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: #1f1f1f;
-    opacity: 0.35;
-    z-index: 0; }
   #breadcrumb .title {
     display: flex;
     flex-direction: column;

@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/1f2890de0d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
@@ -43,17 +44,16 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="nav">
-                        <li class="nav-item"><a href="">Developer</a></li>
-                        <li class="nav-item"><a href="">Business</a></li>
-                        <li class="nav-item"><a href="">Design</a></li>
-                        <li class="nav-item"><a href="">Marketing</a></li>
+                        <li class="nav-item" data-source="1"><a href="#">Developer</a></li>
+                        <li class="nav-item" data-source="2"><a href="#">Business</a></li>
+                        <li class="nav-item" data-source="3"><a href="#">Design</a></li>
+                        <li class="nav-item" data-source="4"><a href="#">Marketing</a></li>
                     </ul>
                 </div>
             </div>
             <div class="tabb-content">
-                <div class="tabb-pane">
+                <div class="tabb-pane active " data-target="1" >
                     <div class="row">
-                       
                         <div class="col-lg-6">
                             <div class="featured-courses-content">
                                 <span class="ingredients-span">ingredients</span>
@@ -69,6 +69,69 @@
                         <div class="col-lg-6">
                             <div class="featured-courses-img">
                                 <img src="./assets/img/featured_courses_img01 (1).jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabb-pane d-none " data-target="2" >
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="featured-courses-content">
+                                <span class="ingredients-span">ingredients</span>
+                                <h2>Learning Paths <span>For Remote</span></h2>
+                                <p>A good education makes an individual develop personally, socially as well as
+                                    economically. Education helps us to do our
+                                    daily life activities in the best possible ways. Education makes us dutiful. Education
+                                    helps us to acquire new skills
+                                    and knowledge that will impact.</p>
+                                <a href="#" class="btn btn-primary">start today</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="featured-courses-img">
+                                <img src="./assets/img/featured_courses_img02.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabb-pane d-none " data-target="3" >
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="featured-courses-content">
+                                <span class="ingredients-span">ingredients</span>
+                                <h2>Learning Paths <span>For Remote</span></h2>
+                                <p>A good education makes an individual develop personally, socially as well as
+                                    economically. Education helps us to do our
+                                    daily life activities in the best possible ways. Education makes us dutiful. Education
+                                    helps us to acquire new skills
+                                    and knowledge that will impact.</p>
+                                <a href="#" class="btn btn-primary">start today</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="featured-courses-img">
+                                <img src="./assets/img/featured_courses_img03.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabb-pane d-none " data-target="4" >
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="featured-courses-content">
+                                <span class="ingredients-span">ingredients</span>
+                                <h2>Learning Paths <span>For Remote</span></h2>
+                                <p>A good education makes an individual develop personally, socially as well as
+                                    economically. Education helps us to do our
+                                    daily life activities in the best possible ways. Education makes us dutiful. Education
+                                    helps us to acquire new skills
+                                    and knowledge that will impact.</p>
+                                <a href="#" class="btn btn-primary">start today</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="featured-courses-img">
+                                <img src="./assets/img/featured_courses_img02.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -99,5 +162,9 @@
         </div>
     </section>
    </main>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="./assets/js/main.js"></script>
 </body>
 </html>
