@@ -60,6 +60,7 @@
 }
 #featured-courses {
   padding: 110px 0px;
+  position: relative;
   .title {
     h2 {
       margin: 0 0 30px 0;
@@ -112,6 +113,73 @@
           color: $body-color;
         }
       }
+    }
+  }
+  .about-triangle {
+    position: absolute;
+    left: 7%;
+    top: 0;
+    z-index: -1;
+  }
+  .about-circle {
+    position: absolute;
+    right: 6%;
+    top: 24%;
+    z-index: -1;
+  }
+  .about-math {
+    background-image: url("../img/featured_courses_shape.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 366px;
+    margin: 0 auto;
+    z-index: -1;
+  }
+}
+#about-categories {
+  background-image: url("../img/cta_bg.jpg");
+  padding-top: 110px;
+  padding-bottom: 120px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $black-color;
+    opacity: .7;
+    z-index: -1;
+  }
+  .title {
+    h2 {
+      font-size: 37px;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      font-style: normal;
+      font-weight: 500;
+      color:lighten($color: $white-color, $amount: 3);
+      span{
+        color: $primary-color;
+      }
+    }
+    p{
+      font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: $white-color;
     }
   }
 }

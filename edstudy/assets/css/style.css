@@ -17,6 +17,17 @@
     background-color: #25cdc9;
     border: none; }
 
+.btn-outline-primary {
+  background-color: transparent;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  padding: 18px; }
+  .btn-outline-primary:hover {
+    color: #1f1f1f;
+    background-color: #fee823;
+    border-color: #fee823; }
+
 .back-to-top {
   position: fixed;
   right: 30px;
@@ -616,7 +627,8 @@
         margin: 0px 10px; }
 
 #featured-courses {
-  padding: 110px 0px; }
+  padding: 110px 0px;
+  position: relative; }
   #featured-courses .title h2 {
     margin: 0 0 30px 0; }
     #featured-courses .title h2 span {
@@ -653,6 +665,64 @@
       color: #25cdc9; }
     #featured-courses .tabb-content .tabb-pane .featured-courses-content p {
       color: #7d7d7d; }
+  #featured-courses .about-triangle {
+    position: absolute;
+    left: 7%;
+    top: 0;
+    z-index: -1; }
+  #featured-courses .about-circle {
+    position: absolute;
+    right: 6%;
+    top: 24%;
+    z-index: -1; }
+  #featured-courses .about-math {
+    background-image: url("../img/featured_courses_shape.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 366px;
+    margin: 0 auto;
+    z-index: -1; }
+
+#about-categories {
+  background-image: url("../img/cta_bg.jpg");
+  padding-top: 110px;
+  padding-bottom: 120px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box; }
+  #about-categories::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    opacity: .7;
+    z-index: -1; }
+  #about-categories .title h2 {
+    font-size: 37px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    color: #e8e8e8; }
+    #about-categories .title h2 span {
+      color: #fee823; }
+  #about-categories .title p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #e0e0e0; }
 
 @media (max-width: 991.98px) {
   #breadcrumb .title h2 {
