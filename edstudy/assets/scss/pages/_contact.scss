@@ -1,0 +1,30 @@
+#contact {
+  .contact-form {
+    text-align: center;
+    .form-grp {
+        position: relative;
+        margin: 0 0 20px 0;
+        
+      input {
+        width: 100%;
+        border: 1px solid #d4d4d4;
+        border-radius: 3px;
+        padding: 14px 45px;
+      }
+      textarea{
+        width: 100%;
+        border: 1px solid #d4d4d4;
+        border-radius: 3px;
+        padding: 14px 45px;
+        height: 155px;
+      }
+      i{
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        font-size: 13px;
+        color: #b1b1b1;
+      }
+    }
+  }
+}

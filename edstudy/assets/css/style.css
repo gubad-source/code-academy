@@ -1180,6 +1180,29 @@
       #our-blog .blog-post .blog-content .blog-meta ul .post-share a:nth-child(3) {
         background: #cb2027; }
 
+#contact .contact-form {
+  text-align: center; }
+  #contact .contact-form .form-grp {
+    position: relative;
+    margin: 0 0 20px 0; }
+    #contact .contact-form .form-grp input {
+      width: 100%;
+      border: 1px solid #d4d4d4;
+      border-radius: 3px;
+      padding: 14px 45px; }
+    #contact .contact-form .form-grp textarea {
+      width: 100%;
+      border: 1px solid #d4d4d4;
+      border-radius: 3px;
+      padding: 14px 45px;
+      height: 155px; }
+    #contact .contact-form .form-grp i {
+      position: absolute;
+      top: 18px;
+      left: 20px;
+      font-size: 13px;
+      color: #b1b1b1; }
+
 @media (max-width: 991.98px) {
   #breadcrumb .title h2 {
     font-size: 25px;
