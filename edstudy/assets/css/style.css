@@ -17,6 +17,15 @@
     background-color: #25cdc9;
     border: none; }
 
+.btn-secondary {
+  background-color: #25cdc9;
+  color: #ffffff;
+  border: none; }
+  .btn-secondary:hover {
+    color: #1f1f1f;
+    background-color: #fee823;
+    border: none; }
+
 .btn-outline-primary {
   background-color: transparent;
   color: #ffffff;
@@ -1180,28 +1189,64 @@
       #our-blog .blog-post .blog-content .blog-meta ul .post-share a:nth-child(3) {
         background: #cb2027; }
 
-#contact .contact-form {
-  text-align: center; }
-  #contact .contact-form .form-grp {
+#contact {
+  padding: 110px 0px; }
+  #contact .contact-info .contact-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 50px;
     position: relative;
-    margin: 0 0 20px 0; }
-    #contact .contact-form .form-grp input {
-      width: 100%;
-      border: 1px solid #d4d4d4;
-      border-radius: 3px;
-      padding: 14px 45px; }
-    #contact .contact-form .form-grp textarea {
-      width: 100%;
-      border: 1px solid #d4d4d4;
-      border-radius: 3px;
-      padding: 14px 45px;
-      height: 155px; }
-    #contact .contact-form .form-grp i {
+    padding: 0 0 0 40px; }
+    #contact .contact-info .contact-box::after {
+      content: "";
       position: absolute;
-      top: 18px;
-      left: 20px;
-      font-size: 13px;
-      color: #b1b1b1; }
+      left: auto;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 45px;
+      width: 1px;
+      background: #d9d9d9; }
+    #contact .contact-info .contact-box__icon {
+      margin-right: 15px; }
+    #contact .contact-info .contact-box__content h5 {
+      font-size: 16px;
+      margin: 0 0 2px 0; }
+    #contact .contact-info .contact-box__content span {
+      font-size: 14px; }
+  #contact .contact-info .before::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 45px;
+    width: 1px;
+    background: #d9d9d9; }
+  #contact .contact-map {
+    margin-bottom: 65px; }
+  #contact .contact-form {
+    text-align: center; }
+    #contact .contact-form .form-grp {
+      position: relative;
+      margin: 0 0 20px 0; }
+      #contact .contact-form .form-grp input {
+        width: 100%;
+        border: 1px solid #d4d4d4;
+        border-radius: 3px;
+        padding: 14px 45px; }
+      #contact .contact-form .form-grp textarea {
+        width: 100%;
+        border: 1px solid #d4d4d4;
+        border-radius: 3px;
+        padding: 14px 45px;
+        height: 155px; }
+      #contact .contact-form .form-grp i {
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        font-size: 13px;
+        color: #b1b1b1; }
 
 @media (max-width: 991.98px) {
   #breadcrumb .title h2 {

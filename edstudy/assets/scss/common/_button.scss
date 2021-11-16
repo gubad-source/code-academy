@@ -18,6 +18,16 @@
         border: none;
     }
 }
+.btn-secondary{
+    background-color: $secondary-color;
+    color: #ffffff;
+    border: none;
+    &:hover{
+        color: $black-color;
+        background-color: $primary-color;
+        border: none;
+    }
+}
 .btn-outline-primary{
     background-color: transparent;
     color: #ffffff;

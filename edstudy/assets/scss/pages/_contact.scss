@@ -1,4 +1,52 @@
 #contact {
+  padding: 110px 0px;
+  .contact-info{
+    .contact-box{
+      display: flex;
+    align-items: flex-start;
+      margin-bottom: 50px;
+      position: relative;
+      padding: 0 0 0 40px;
+      &::after{
+        content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 45px;
+    width: 1px;
+    background: #d9d9d9;
+      }
+      &__icon{
+        margin-right: 15px;
+      }
+      &__content{
+        h5{
+          font-size: 16px;
+          margin: 0 0 2px 0;
+        }
+        span{
+          font-size: 14px;
+        }
+        
+      }
+     
+    }
+    .before::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 45px;
+      width: 1px;
+      background: #d9d9d9;  
+    }
+  }
+  .contact-map{
+    margin-bottom: 65px;
+  }
   .contact-form {
     text-align: center;
     .form-grp {
@@ -10,6 +58,7 @@
         border: 1px solid #d4d4d4;
         border-radius: 3px;
         padding: 14px 45px;
+     
       }
       textarea{
         width: 100%;
