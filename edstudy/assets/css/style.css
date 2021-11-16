@@ -1191,6 +1191,24 @@
 
 #contact {
   padding: 110px 0px; }
+  #contact .contact-title {
+    padding: 0 0 25px 0;
+    margin: 0 0 70px 0;
+    position: relative; }
+    #contact .contact-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2.5px;
+      margin: 0 auto;
+      background: #4eabee; }
+    #contact .contact-title h2 {
+      margin: 0 0 20px 0; }
+      #contact .contact-title h2 span {
+        color: #25cdc9; }
   #contact .contact-info .contact-box {
     display: flex;
     align-items: flex-start;

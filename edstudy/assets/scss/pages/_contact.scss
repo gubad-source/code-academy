@@ -1,5 +1,27 @@
 #contact {
   padding: 110px 0px;
+  .contact-title{
+    padding: 0 0 25px 0;
+    margin: 0 0 70px 0;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2.5px;
+      margin: 0 auto;
+      background: $twitter-color
+    }
+    h2{
+      margin: 0 0 20px 0;
+      span{
+        color: $secondary-color;
+      }
+    }
+  }
   .contact-info{
     .contact-box{
       display: flex;
