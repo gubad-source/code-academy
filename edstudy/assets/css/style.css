@@ -997,6 +997,111 @@
   line-height: 1.5;
   display: block; }
 
+#event-courses {
+  box-sizing: border-box; }
+  #event-courses .top-courses-item {
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 5px 12.09px 0.91px rgba(133, 127, 151, 0.11); }
+    #event-courses .top-courses-item .top-courses-thumb {
+      position: relative; }
+      #event-courses .top-courses-item .top-courses-thumb a img {
+        width: 100%; }
+      #event-courses .top-courses-item .top-courses-thumb .bestseller {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        line-height: 28px;
+        padding: 0 15px 0 20px;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #414141;
+        background: #fee823; }
+        #event-courses .top-courses-item .top-courses-thumb .bestseller::before {
+          content: "";
+          position: absolute;
+          right: -15px;
+          top: 0;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 14px 0 14px 15px;
+          border-color: transparent transparent transparent #fee823; }
+    #event-courses .top-courses-item .top-courses-content {
+      padding: 30px 24px 30px; }
+      #event-courses .top-courses-item .top-courses-content .event-top-wrap ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0 0 15px 0;
+        list-style: none; }
+        #event-courses .top-courses-item .top-courses-content .event-top-wrap ul .event-tag a {
+          line-height: 32px;
+          display: block;
+          font-size: 12px;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: #414141;
+          font-family: "Oswald", sans-serif;
+          padding: 0 20px;
+          border-radius: 30px;
+          background: #fee823; }
+        #event-courses .top-courses-item .top-courses-content .event-top-wrap ul .courses-avatar i {
+          color: #fee823; }
+        #event-courses .top-courses-item .top-courses-content .event-top-wrap ul .courses-avatar a {
+          color: #7d7d7d; }
+      #event-courses .top-courses-item .top-courses-content h5 {
+        font-size: 16px;
+        margin: 0 0 15px 0; }
+        #event-courses .top-courses-item .top-courses-content h5 a {
+          color: #414141;
+          font-style: normal;
+          font-weight: 500; }
+      #event-courses .top-courses-item .top-courses-content p {
+        color: #7d7d7d;
+        font-size: 14px; }
+      #event-courses .top-courses-item .top-courses-content .event-bottom-wrap {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #e1e1e1;
+        padding-top: 25px;
+        margin-top: 35px; }
+        #event-courses .top-courses-item .top-courses-content .event-bottom-wrap .event-meta ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          padding-left: 0; }
+          #event-courses .top-courses-item .top-courses-content .event-bottom-wrap .event-meta ul li i {
+            color: #fee928; }
+          #event-courses .top-courses-item .top-courses-content .event-bottom-wrap .event-meta ul li:first-child {
+            margin: 0 15px 0 0;
+            padding: 0 15px 0 0;
+            position: relative; }
+            #event-courses .top-courses-item .top-courses-content .event-bottom-wrap .event-meta ul li:first-child i::after {
+              content: "|";
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              font-size: 14px;
+              color: #7d7d7d; }
+        #event-courses .top-courses-item .top-courses-content .event-bottom-wrap .price-meta {
+          font-size: 16px;
+          color: #414141;
+          font-weight: 500; }
+    #event-courses .top-courses-item:hover .top-courses-thumb::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #363636;
+      border-radius: 6px 6px 0 0;
+      opacity: 0.6; }
+
 @media (max-width: 991.98px) {
   #breadcrumb .title h2 {
     font-size: 25px;
