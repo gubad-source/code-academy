@@ -1102,6 +1102,84 @@
       border-radius: 6px 6px 0 0;
       opacity: 0.6; }
 
+#our-blog .blog-post .blog-thumb img {
+  width: 100%; }
+
+#our-blog .blog-post .blog-content {
+  border: 1px solid #f4f4f4;
+  padding: 35px 35px 25px; }
+  #our-blog .blog-post .blog-content .blog-tag ul {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    padding: 0px; }
+    #our-blog .blog-post .blog-content .blog-tag ul li {
+      color: #4eabee; }
+    #our-blog .blog-post .blog-content .blog-tag ul li:nth-child(1) {
+      margin: 0 7px 0 0; }
+    #our-blog .blog-post .blog-content .blog-tag ul li:nth-child(2) {
+      position: relative; }
+      #our-blog .blog-post .blog-content .blog-tag ul li:nth-child(2)::after {
+        content: "|";
+        display: inline-block;
+        margin: 0 8px;
+        font-weight: 500;
+        font-size: 14px; }
+  #our-blog .blog-post .blog-content p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #7d7d7d; }
+  #our-blog .blog-post .blog-content .blog-meta ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 35px;
+    padding-left: 0px; }
+    #our-blog .blog-post .blog-content .blog-meta ul::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      background: #dedede; }
+    #our-blog .blog-post .blog-content .blog-meta ul::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -3px;
+      width: 100%;
+      height: 1px;
+      background: #dedede; }
+    #our-blog .blog-post .blog-content .blog-meta ul li {
+      list-style: none; }
+      #our-blog .blog-post .blog-content .blog-meta ul li .fa-clock {
+        color: #4eabee; }
+    #our-blog .blog-post .blog-content .blog-meta ul li:nth-child(2) a {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #3c3444;
+      font-weight: 500; }
+    #our-blog .blog-post .blog-content .blog-meta ul .post-share a {
+      display: inline-block;
+      height: 30px;
+      width: 30px;
+      line-height: 30px;
+      background: #385594;
+      text-align: center;
+      font-size: 12px;
+      border-radius: 50%;
+      color: #fff;
+      margin-left: 5px; }
+      #our-blog .blog-post .blog-content .blog-meta ul .post-share a:nth-child(2) {
+        background: #4eabee; }
+      #our-blog .blog-post .blog-content .blog-meta ul .post-share a:nth-child(3) {
+        background: #cb2027; }
+
 @media (max-width: 991.98px) {
   #breadcrumb .title h2 {
     font-size: 25px;
