@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    if ($('.blog-details__content__comment ul li').length > 0 ){
+        $('.comment-size').text($('.blog-details__content__comment ul li').length);
+    }
+
     if ($('.testimonial-slider').length) {
         $('.testimonial-slider').owlCarousel({
             loop: true,
