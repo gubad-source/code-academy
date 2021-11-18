@@ -174,7 +174,7 @@
           margin-bottom: 20px;
           background: $white-secondary-color;
           height: 170px;
-          color: #7d7d7d;
+          color: $body-color;
           transition: 0.3s;
         }
         input {
@@ -183,7 +183,7 @@
           border: none;
           margin-bottom: 20px;
           background: $white-secondary-color;
-          color: #7d7d7d;
+          color: $body-color;
           transition: 0.3s;
         }
         button{

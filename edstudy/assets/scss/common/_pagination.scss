@@ -1,0 +1,21 @@
+.pagination-wrap {
+  li {
+    margin-right: 10px;
+    margin-top: 10px;
+    a {
+      background: $pagination-background-color;
+      color: $pagination-color;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1;
+      padding: 16px 24px;
+    }
+  }
+}
+.center {
+  justify-content: center;
+}
+.start{
+    justify-content: flex-start;
+}
