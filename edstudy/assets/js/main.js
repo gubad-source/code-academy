@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    new WOW().init();
+
     if ($('.blog-details__content__comment ul li').length > 0 ){
         $('.comment-size').text($('.blog-details__content__comment ul li').length);
     }
@@ -40,6 +42,7 @@ $(document).ready(function(){
               let tabbPaneTargetRemove = document.querySelector(".tabb-pane.active");
               tabbPaneTargetRemove.classList.remove("active");
               tabbPaneTargetRemove.classList.add("d-none");
+             
           
               tabbPaneTargetSelected.classList.remove("d-none");
               tabbPaneTargetSelected.classList.add("active");
