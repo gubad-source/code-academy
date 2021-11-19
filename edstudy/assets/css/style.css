@@ -3586,6 +3586,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         color: #4eabee; }
     #our-blog .blog-sidebar .widget .single-sidebar__category #treeview .open ul {
       display: none; }
+  #our-blog .blog-sidebar .widget .single-sidebar__post ul {
+    margin: 0;
+    padding: 0; }
+    #our-blog .blog-sidebar .widget .single-sidebar__post ul li {
+      display: flex;
+      align-items: center;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      border-bottom: 1px dashed #d7d7d7; }
+    #our-blog .blog-sidebar .widget .single-sidebar__post ul li:last-child {
+      margin: 0;
+      border: none; }
+  #our-blog .blog-sidebar .widget .single-sidebar__post__thumb {
+    margin: 0 20px 0 0; }
+  #our-blog .blog-sidebar .widget .single-sidebar__post__content h5 a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #1f1f1f; }
+  #our-blog .blog-sidebar .widget .single-sidebar__post__content span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #7d7d7d;
+    font-weight: 600; }
 
 #contact {
   padding: 110px 0px; }

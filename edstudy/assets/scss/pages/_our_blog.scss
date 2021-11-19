@@ -161,7 +161,7 @@
             list-style: none;
             margin: 0;
             padding: 0;
-            li{
+            li {
               display: block;
               padding-bottom: 10px;
               margin-bottom: 15px;
@@ -176,9 +176,8 @@
                   padding: 0 10px;
                 }
               }
-              &:hover{
-              
-                a{
+              &:hover {
+                a {
                   color: $twitter-color;
                 }
               }
@@ -186,8 +185,49 @@
             .open {
               ul {
                 display: none;
-             
               }
+            }
+          }
+        }
+        &__post {
+
+          ul {
+            margin: 0;
+            padding: 0;
+
+            li{
+              display: flex;
+              align-items: center;
+              padding-bottom: 20px;
+              margin-bottom: 20px;
+              border-bottom: 1px dashed $body-reverse-color;
+            }
+            li:last-child{
+              margin: 0;
+              border: none;
+            }
+          }
+          &__thumb {
+            margin: 0 20px 0 0;
+            a {
+              img {
+              }
+            }
+          }
+          &__content {
+            h5 {
+              a {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 1.2;
+                color: $black-color;
+              }
+            }
+            span {
+              font-size: 12px;
+              text-transform: uppercase;
+              color: $body-color;
+              font-weight: 600;
             }
           }
         }
