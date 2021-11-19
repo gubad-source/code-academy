@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     $("#treeview .open").click(function (e) {
+        e.preventDefault();
         e.stopPropagation();
         $(this).children().eq(1).slideToggle();
       });

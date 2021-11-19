@@ -3610,6 +3610,64 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     text-transform: uppercase;
     color: #7d7d7d;
     font-weight: 600; }
+  #our-blog .blog-sidebar .widget .single-sidebar__newsletter {
+    background-image: url("../img/sidebar_news_bg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 43px 20px;
+    text-align: center; }
+    #our-blog .blog-sidebar .widget .single-sidebar__newsletter__title {
+      position: relative;
+      margin-bottom: 30px;
+      padding-bottom: 10px; }
+      #our-blog .blog-sidebar .widget .single-sidebar__newsletter__title::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 4px;
+        bottom: -4px;
+        width: 40px;
+        margin: 0 auto;
+        background-color: #fee823; }
+      #our-blog .blog-sidebar .widget .single-sidebar__newsletter__title h5 {
+        text-transform: uppercase;
+        color: #fafafa; }
+        #our-blog .blog-sidebar .widget .single-sidebar__newsletter__title h5 span {
+          color: #fee823; }
+    #our-blog .blog-sidebar .widget .single-sidebar__newsletter form input {
+      width: 100%;
+      height: 40px;
+      border: none;
+      padding: 0 30px;
+      margin-bottom: 11px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #7d7d7d;
+      text-align: center; }
+    #our-blog .blog-sidebar .widget .single-sidebar__newsletter form button {
+      color: #fafafa;
+      background-color: #25cdc9;
+      border: none;
+      padding: 14px 34px; }
+  #our-blog .blog-sidebar .widget .single-sidebar__tag ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0; }
+    #our-blog .blog-sidebar .widget .single-sidebar__tag ul li {
+      display: block;
+      margin-right: 7px;
+      margin-top: 7px; }
+      #our-blog .blog-sidebar .widget .single-sidebar__tag ul li a {
+        padding: 0 17px;
+        display: block;
+        border: 2px solid #f8f7f7;
+        border-radius: 3px;
+        font-size: 13px;
+        font-weight: 500;
+        color: #7d7d7d;
+        line-height: 32px; }
 
 #contact {
   padding: 110px 0px; }
