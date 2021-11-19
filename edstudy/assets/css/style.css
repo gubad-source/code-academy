@@ -3523,6 +3523,70 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         #our-blog .blog-post .blog-content .blog-meta ul .post-share a:nth-child(3) {
           background: #cb2027; }
 
+#our-blog .blog-sidebar .widget {
+  margin: 0 0 25px 0;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  padding: 30px 25px 35px; }
+  #our-blog .blog-sidebar .widget .single-sidebar__title {
+    margin: 0 0 25px 0; }
+    #our-blog .blog-sidebar .widget .single-sidebar__title h3 {
+      font-size: 20px;
+      color: #414141;
+      margin-bottom: 0;
+      padding-left: 10px;
+      position: relative;
+      line-height: 1; }
+      #our-blog .blog-sidebar .widget .single-sidebar__title h3::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 1px;
+        height: 20px;
+        width: 2px;
+        background: #fee823; }
+  #our-blog .blog-sidebar .widget .single-sidebar__form form {
+    position: relative; }
+    #our-blog .blog-sidebar .widget .single-sidebar__form form input {
+      width: 100%;
+      border: 1px solid #d7d7d7;
+      padding: 14px 20px;
+      font-weight: 500;
+      background: #fafafa;
+      color: #7d7d7d; }
+    #our-blog .blog-sidebar .widget .single-sidebar__form form button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      border: none;
+      padding: 0;
+      background: none;
+      color: #7d7d7d;
+      cursor: pointer;
+      line-height: 1; }
+  #our-blog .blog-sidebar .widget .single-sidebar__category #treeview {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #our-blog .blog-sidebar .widget .single-sidebar__category #treeview li {
+      display: block;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      border-bottom: 1px dashed #d7d7d7; }
+      #our-blog .blog-sidebar .widget .single-sidebar__category #treeview li a {
+        color: #7d7d7d;
+        transition: all 1s ease; }
+        #our-blog .blog-sidebar .widget .single-sidebar__category #treeview li a span {
+          float: right;
+          line-height: 21px;
+          background: #f8f7f7;
+          padding: 0 10px; }
+      #our-blog .blog-sidebar .widget .single-sidebar__category #treeview li:hover a {
+        color: #4eabee; }
+    #our-blog .blog-sidebar .widget .single-sidebar__category #treeview .open ul {
+      display: none; }
+
 #contact {
   padding: 110px 0px; }
   #contact .contact-title {

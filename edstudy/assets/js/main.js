@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    $("#treeview .open").click(function (e) {
+        e.stopPropagation();
+        $(this).children().eq(1).slideToggle();
+      });
+      
     new WOW().init();
 
     if ($('.blog-details__content__comment ul li').length > 0 ){
