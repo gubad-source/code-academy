@@ -1,5 +1,55 @@
 #shop-area {
+  padding: 120px 0px;
+  .shop-action{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+    &__result{
+span{
+  font-size: 13px;
+  font-weight: 500;
+}
+    }
+    &__form{
+     form{
+       position: relative;
+       &::before{
+        content: "";
+        position: absolute;
+        right: 45px;
+        top: 0;
+        height: 42px;
+        width: 1px;
+        border-left: 1px dotted rgb(167, 167, 167);
+        display: block;
+       }
+   
+     }
+     &__select{
+      width: 218px;
+      height: 42px;
+      text-transform: uppercase;
+      display: inline-block;
+    padding: 10px 42px 10px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6;
+    color: $body-color;
+    vertical-align: middle;
+    background: url('../img/nw_selarw.png') no-repeat scroll 97.5% center;
+    background-color: transparent;
+    border: 1px dotted rgb(167, 167, 167);
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-appearance: none;
+      option{
+
+      }
+    }
+    }
+  }
   .shop-item {
+    margin: 0 0 50px 0;
     &:hover {
       .product-thumb .product-meta {
         opacity: 1;
@@ -58,13 +108,18 @@
         }
       }
       .price {
-        margin-bottom: 10px;
         font-weight: 500;
         font-size: 14px;
         color: $body-color;
         font-style: normal;
         line-height: 1.5;
         display: block;
+      }
+      .product-rating{
+        i{
+          font-size: 10px;
+    color: lighten($color:  $body-color, $amount: 1);
+        }
       }
     }
   }
@@ -153,6 +208,37 @@
     a{
       color: $black-color;
     }
+          }
+        }
+      }
+      .widget-tag{
+        ul{
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0;
+          padding: 0;
+          li{
+            display: block;
+            margin-right: 7px;
+            margin-top: 7px;
+            &:hover{
+              a{
+                color: $white-color;
+                background-color: $secondary-color;
+                text-decoration: none;
+              }
+            }
+            a{
+              padding: 0 17px;
+              display: block;
+              border: 2px solid $gray-color;
+              border-radius: 3px;
+              font-size: 13px;
+              font-weight: 500;
+              color: $body-color;
+              line-height: 32px;
+              background-color: $body-reverse-color;
+            }
           }
         }
       }
