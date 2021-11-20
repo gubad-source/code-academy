@@ -61,35 +61,33 @@
           margin-bottom: 0;
         }
 
-        .rating {
+      .rating{
+        ul{
+          list-style: none;
           display: flex;
-          margin-top: 25px;
-          margin-bottom: 20px;
-          align-content: center;
-          .stars {
-            display: flex;
-            align-items: center;
-            padding-left: 0px;
-            li {
-              font-size: 12px;
-              color: #e4cf11;
-              display: inline-block;
-              i {
-                margin-right: 5px;
-              }
-            }
-          }
-
-          .average {
-            margin-left: 15px;
-            font-size: 14px;
-            font-weight: 500;
-            color: #414141;
-            span {
-              color: #7d7d7d;
-            }
-          }
+          padding: 0;
+          list-style: none;
+          justify-content: space-between;
         }
+        &__info{
+          display: flex;
+         &__star{
+           margin: 0 15px 0 0;
+          i{
+            color: $primary-color;
+            font-size: 12px;
+          }
+         }
+         &__point{
+
+         }
+        }
+        &__level{
+i{
+  color: $twitter-color;
+}
+        }
+      }
 
         .bottom {
           display: flex;

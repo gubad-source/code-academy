@@ -3918,28 +3918,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           font-size: 18px;
           line-height: 1.5;
           margin-bottom: 0; }
-        #courses .courses .item .info .rating {
+        #courses .courses .item .info .rating ul {
+          list-style: none;
           display: flex;
-          margin-top: 25px;
-          margin-bottom: 20px;
-          align-content: center; }
-          #courses .courses .item .info .rating .stars {
-            display: flex;
-            align-items: center;
-            padding-left: 0px; }
-            #courses .courses .item .info .rating .stars li {
-              font-size: 12px;
-              color: #e4cf11;
-              display: inline-block; }
-              #courses .courses .item .info .rating .stars li i {
-                margin-right: 5px; }
-          #courses .courses .item .info .rating .average {
-            margin-left: 15px;
-            font-size: 14px;
-            font-weight: 500;
-            color: #414141; }
-            #courses .courses .item .info .rating .average span {
-              color: #7d7d7d; }
+          padding: 0;
+          list-style: none;
+          justify-content: space-between; }
+        #courses .courses .item .info .rating__info {
+          display: flex; }
+          #courses .courses .item .info .rating__info__star {
+            margin: 0 15px 0 0; }
+            #courses .courses .item .info .rating__info__star i {
+              color: #fee823;
+              font-size: 12px; }
+        #courses .courses .item .info .rating__level i {
+          color: #4eabee; }
         #courses .courses .item .info .bottom {
           display: flex;
           align-items: center;

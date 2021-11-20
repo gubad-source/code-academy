@@ -1,12 +1,14 @@
 $(document).ready(function(){
 
+    //   new WOW().init();
+
     $("#treeview .open").click(function (e) {
         e.preventDefault();
         e.stopPropagation();
         $(this).children().eq(1).slideToggle();
       });
       
-    new WOW().init();
+   
 
     if ($('.blog-details__content__comment ul li').length > 0 ){
         $('.comment-size').text($('.blog-details__content__comment ul li').length);
