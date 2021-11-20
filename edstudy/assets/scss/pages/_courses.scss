@@ -1,3 +1,71 @@
+.courses-search{
+  &__box{
+    background-image: url('../img/courses_search_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    margin-top: -125px;
+    position: relative;
+    z-index: 1;
+    form{
+      display: flex;
+      align-items: center;
+      padding: 60px 30px;
+      flex-wrap: nowrap;
+    }
+    &__input{
+      position: relative;
+      width: 52%;
+      border-right: 0.6px solid $body-reverse-color;
+i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
+  color: $title-color;
+}
+input{
+  width: 100%;
+    border: none;
+    background-color: #fff;
+    padding: 15px 49px;
+    height: 56px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: $title-color;
+    outline: none;
+}
+    }
+    &__select{
+      display: inline-block;
+      width: 25%;
+      height: 56px;
+      padding: 15px 20px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: $title-color;
+      vertical-align: middle;
+      background-color: #fff;
+      border: none;
+      border-radius: 0;
+     
+
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      // text-indent: 1px;
+      // text-overflow: '';
+    }
+    button{
+      width: 23%;
+      color: #1f1f1f;
+      background-color: $primary-color;
+      font-weight: 600;
+    }
+  }
+}
 #courses {
   position: relative;
   padding: 110px 0px;
@@ -61,33 +129,32 @@
           margin-bottom: 0;
         }
 
-      .rating{
-        ul{
-          list-style: none;
-          display: flex;
-          padding: 0;
-          list-style: none;
-          justify-content: space-between;
-        }
-        &__info{
-          display: flex;
-         &__star{
-           margin: 0 15px 0 0;
-          i{
-            color: $primary-color;
-            font-size: 12px;
+        .rating {
+          ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            list-style: none;
+            justify-content: space-between;
           }
-         }
-         &__point{
-
-         }
+          &__info {
+            display: flex;
+            &__star {
+              margin: 0 15px 0 0;
+              i {
+                color: $primary-color;
+                font-size: 12px;
+              }
+            }
+            &__point {
+            }
+          }
+          &__level {
+            i {
+              color: $twitter-color;
+            }
+          }
         }
-        &__level{
-i{
-  color: $twitter-color;
-}
-        }
-      }
 
         .bottom {
           display: flex;
@@ -136,7 +203,7 @@ i{
     h2 {
       font-size: 36px;
       margin: 0 0 20px 0;
-      span{
+      span {
         color: $twitter-color;
       }
     }
@@ -155,11 +222,9 @@ i{
         bottom: 10px;
         border: 1px dotted rgb(231, 231, 231);
         z-index: -1;
-       
       }
-      &:hover{
+      &:hover {
         transform: translateY(-7px);
-       
       }
       text-decoration: none;
       display: flex;

@@ -7,4 +7,29 @@
             }
         }
     }
+    .courses-search{
+        &__box{
+            form{
+                display: block;
+            }
+            &__input{
+                width: 100%;
+                margin: 0 0 10px 0;
+             i{
+                 display: none;
+             }
+             input{
+              padding-left: 15px;
+             }
+            }
+            &__select{
+                width: 100%;
+                margin: 0 0 10px 0;
+            }
+            button{
+                width: 100%;
+                margin: 0 0 10px 0;
+            }
+        }
+    }
 }

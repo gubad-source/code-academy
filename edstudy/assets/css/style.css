@@ -3867,6 +3867,62 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         font-size: 13px;
         color: #b1b1b1; }
 
+.courses-search__box {
+  background-image: url("../img/courses_search_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  margin-top: -125px;
+  position: relative;
+  z-index: 1; }
+  .courses-search__box form {
+    display: flex;
+    align-items: center;
+    padding: 60px 30px;
+    flex-wrap: nowrap; }
+  .courses-search__box__input {
+    position: relative;
+    width: 52%;
+    border-right: 0.6px solid #d7d7d7; }
+    .courses-search__box__input i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 25px;
+      color: #414141; }
+    .courses-search__box__input input {
+      width: 100%;
+      border: none;
+      background-color: #fff;
+      padding: 15px 49px;
+      height: 56px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: #414141;
+      outline: none; }
+  .courses-search__box__select {
+    display: inline-block;
+    width: 25%;
+    height: 56px;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #414141;
+    vertical-align: middle;
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
+  .courses-search__box button {
+    width: 23%;
+    color: #1f1f1f;
+    background-color: #fee823;
+    font-weight: 600; }
+
 #courses {
   position: relative;
   padding: 110px 0px; }
@@ -4170,4 +4226,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media (max-width: 991.98px) {
   #breadcrumb .title h2 {
     font-size: 25px;
-    text-align: center; } }
+    text-align: center; }
+  .courses-search__box form {
+    display: block; }
+  .courses-search__box__input {
+    width: 100%;
+    margin: 0 0 10px 0; }
+    .courses-search__box__input i {
+      display: none; }
+    .courses-search__box__input input {
+      padding-left: 15px; }
+  .courses-search__box__select {
+    width: 100%;
+    margin: 0 0 10px 0; }
+  .courses-search__box button {
+    width: 100%;
+    margin: 0 0 10px 0; } }
