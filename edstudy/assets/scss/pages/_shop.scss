@@ -57,14 +57,104 @@
           }
         }
       }
-      .price{
+      .price {
         margin-bottom: 10px;
         font-weight: 500;
         font-size: 14px;
-        color:$body-color;
+        color: $body-color;
         font-style: normal;
         line-height: 1.5;
-          display: block;
+        display: block;
+      }
+    }
+  }
+  .shop-sidebar {
+    .widget {
+      margin: 0 0 40px 0;
+      form {
+        position: relative;
+        input {
+          width: 100%;
+          border: 1px solid $body-reverse-color;
+          padding: 14px 20px;
+          font-weight: 500;
+          background: $white-sidebar-color;
+          color: $body-color;
+          &:focus {
+            outline: none;
+          }
+        }
+        button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 20px;
+          border: none;
+          padding: 0;
+          background: none;
+          color: $body-color;
+          cursor: pointer;
+          line-height: 1;
+        }
+      }
+      .widget-title {
+        margin: 0 0 25px 0;
+        h5 {
+        }
+      }
+      .widget-body {
+        ul {
+          margin: 0;
+          padding: 0;
+
+          li {
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px dashed $body-reverse-color;
+          }
+        }
+        &__thumb {
+          margin: 0 20px 0 0;
+          a {
+            img {
+            }
+          }
+        }
+        &__content {
+          h6 {
+            margin-bottom: 0px;
+            a {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1.2;
+              color: $black-color;
+            }
+          }
+          span {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: $body-color;
+            font-weight: 600;
+          }
+        }
+      }
+      .widget-category {
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            list-style: none;
+            display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $white-color;
+    margin-bottom: 15px;
+    a{
+      color: $black-color;
+    }
+          }
+        }
       }
     }
   }
