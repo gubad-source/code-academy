@@ -4223,6 +4223,92 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #blog-details .blog-details__content__reply button {
   font-weight: 600; }
 
+#article {
+  padding: 100px 0px; }
+  #article .article-bg {
+    background-image: url("../img/blog_bg.jpg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 540px;
+    background-position: center;
+    background-size: cover;
+    z-index: -1; }
+  #article .article-title {
+    text-align: center;
+    position: relative;
+    padding: 0 0 25px 0;
+    margin: 0 0 70px 0;
+    color: #e0e0e0; }
+    #article .article-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2.5px;
+      margin: 0 auto;
+      background-color: #e0e0e0; }
+    #article .article-title h2 {
+      margin: 0 0 20px 0; }
+  #article .article-post__item {
+    background: #fff;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); }
+    #article .article-post__item__thumb {
+      position: relative; }
+      #article .article-post__item__thumb a img {
+        width: 100%; }
+      #article .article-post__item__thumb .tag {
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+        padding: 0 15px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: #fee823;
+        color: #414141;
+        border-radius: 6px 6px 0px 0px; }
+      #article .article-post__item__thumb .tag-twitter {
+        background-color: #4eabee;
+        color: #e0e0e0; }
+      #article .article-post__item__thumb .tag-black {
+        background-color: #1f1f1f;
+        color: #e0e0e0; }
+    #article .article-post__item__content {
+      padding: 35px 30px 35px; }
+      #article .article-post__item__content__meta ul {
+        margin: 0 0 15px 0;
+        padding: 0;
+        list-style: none;
+        display: flex; }
+        #article .article-post__item__content__meta ul li {
+          margin: 0 20px 0 0;
+          font-size: 12px;
+          text-transform: uppercase;
+          color: #7d7d7d;
+          font-weight: 500;
+          letter-spacing: 2px; }
+          #article .article-post__item__content__meta ul li i {
+            margin: 0 4px 0 0; }
+          #article .article-post__item__content__meta ul li a {
+            margin: 0 0 0 4px;
+            color: #7d7d7d; }
+      #article .article-post__item__content h4 {
+        margin: 0 0 14px 0; }
+        #article .article-post__item__content h4 a {
+          font-size: 18px;
+          color: #1f1f1f; }
+      #article .article-post__item__content p {
+        font-size: 14px;
+        color: #7d7d7d; }
+      #article .article-post__item__content a {
+        color: #1f1f1f; }
+
 @media (max-width: 991.98px) {
   #breadcrumb .title h2 {
     font-size: 25px;
