@@ -722,3 +722,31 @@
     }
   }
 }
+#vision-area{
+  height: 100vh;
+  background-image: url('../img/slider_bg01.jpg');
+  background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  .vision-content{
+    h6{
+      color: lighten($color: $white-color, $amount: 1);
+      img{
+
+      }
+    }
+    h2{
+      color: lighten($color: $white-color, $amount: 1);
+      font-size: 73px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+      span{
+color: $primary-color;
+      }
+    }
+    a{
+
+    }
+  }
+}
