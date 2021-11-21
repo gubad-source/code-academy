@@ -1,4 +1,4 @@
-.breadcrumb {
+.breadcrumb-intro, .breadcrumb {
     background-position: center;
     background-size: cover;
     background-image: url("../img/breadcrumb_bg01.jpg");
@@ -46,4 +46,8 @@
         }
       }
     }
+  }
+
+  .breadcrumb-intro{
+    background-image: url("../img/breadcrumb_bg02.jpg");
   }

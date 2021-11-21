@@ -71,6 +71,24 @@ $(document).ready(function(){
         })
     })
   
+    if ($(".back-to-top").length) {
+        $(window).scroll(function (e) {
+            var scroll = $(window).scrollTop();
+            if (scroll > 245) {
+                $('.back-to-top').addClass("show");
+                $('.nav-first').addClass("sticky-menu");
+            } else {
+                $('.back-to-top').removeClass("show");
+                $('.nav-first').removeClass("sticky-menu");
+            }
+        });
+
+        $(".back-to-top").click(function (e) {
+            $('html, body').animate({
+                scrollTop: $("html").offset().top
+            }, 1000);
+        });
+    }
 
       new WOW().init();
 })

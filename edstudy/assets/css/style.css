@@ -2367,43 +2367,47 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   justify-content: center; }
 
 .start {
+  display: flex;
   justify-content: flex-start; }
 
-.breadcrumb {
+.breadcrumb-intro, .breadcrumb {
   background-position: center;
   background-size: cover;
   background-image: url("../img/breadcrumb_bg01.jpg");
   padding: 240px 0px 175px;
   z-index: 1; }
-  .breadcrumb .title {
+  .breadcrumb-intro .title, .breadcrumb .title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    .breadcrumb .title h2 {
+    .breadcrumb-intro .title h2, .breadcrumb .title h2 {
       font-size: 60px;
       color: #fff;
       margin-bottom: 0;
       text-transform: uppercase; }
-    .breadcrumb .title nav ol {
+    .breadcrumb-intro .title nav ol, .breadcrumb .title nav ol {
       list-style: none;
       display: flex; }
-      .breadcrumb .title nav ol a {
+      .breadcrumb-intro .title nav ol a, .breadcrumb .title nav ol a {
         text-transform: capitalize;
         font-weight: 500;
         font-size: 18px;
         color: #ffffff; }
-        .breadcrumb .title nav ol a:hover {
+        .breadcrumb-intro .title nav ol a:hover, .breadcrumb .title nav ol a:hover {
           text-decoration: none; }
-      .breadcrumb .title nav ol li:nth-child(2) a {
+      .breadcrumb-intro .title nav ol li:nth-child(2) a, .breadcrumb .title nav ol li:nth-child(2) a {
         color: #fee823; }
-      .breadcrumb .title nav ol li:nth-child(2)::before {
+      .breadcrumb-intro .title nav ol li:nth-child(2)::before, .breadcrumb .title nav ol li:nth-child(2)::before {
         display: inline-block;
         padding-right: 0;
         color: #fff;
         content: "|";
         font-weight: 500;
         margin: 0px 10px; }
+
+.breadcrumb-intro {
+  background-image: url("../img/breadcrumb_bg02.jpg"); }
 
 .blog-sidebar .widget {
   margin: 0 0 25px 0;
