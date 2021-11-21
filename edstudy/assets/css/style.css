@@ -2400,61 +2400,61 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 1;
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%); }
 
-#footer {
+.footer {
   background: #242424;
   padding-bottom: 45px;
   padding-top: 95px; }
-  #footer h3 {
+  .footer h3 {
     font-size: 18px;
     font-weight: 500;
     color: #fff;
     line-height: 1;
     margin-bottom: 25px; }
-  #footer .about p {
+  .footer .about p {
     color: #b3b3b3;
     margin-bottom: 0;
     font-weight: 500; }
-  #footer .about .contact-list {
+  .footer .about .contact-list {
     margin-top: 20px; }
-    #footer .about .contact-list ul {
+    .footer .about .contact-list ul {
       padding-left: 0; }
-      #footer .about .contact-list ul li {
+      .footer .about .contact-list ul li {
         display: block;
         color: #949393;
         font-style: italic;
         margin-bottom: 7px;
         font-weight: 500; }
-  #footer .quick-links ul {
+  .footer .quick-links ul {
     list-style-type: none;
     padding-left: 0px; }
-    #footer .quick-links ul li {
+    .footer .quick-links ul li {
       display: block;
       padding-bottom: 10px;
       margin-bottom: 10px;
       border-bottom: 1px dashed #3e3e3e; }
-      #footer .quick-links ul li a {
+      .footer .quick-links ul li a {
         font-size: 14px;
         font-weight: 600;
         color: #b3b3b3;
         display: inline-block;
         line-height: 1; }
-  #footer .popular-courses .courses-items .item {
+  .footer .popular-courses .courses-items .item {
     display: flex;
     align-items: center;
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 1px dashed #3e3e3e; }
-    #footer .popular-courses .courses-items .item .photo {
+    .footer .popular-courses .courses-items .item .photo {
       margin-right: 20px; }
-      #footer .popular-courses .courses-items .item .photo img {
+      .footer .popular-courses .courses-items .item .photo img {
         border-radius: 6px; }
-    #footer .popular-courses .courses-items .item .content h4 {
+    .footer .popular-courses .courses-items .item .content h4 {
       font-size: 14px;
       color: #bcbcbc;
       line-height: 22px;
       font-family: "Roboto", sans-serif;
       margin-bottom: 5px; }
-    #footer .popular-courses .courses-items .item .content span {
+    .footer .popular-courses .courses-items .item .content span {
       display: block;
       font-size: 14px;
       color: #b3b3b3;
@@ -2462,7 +2462,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       padding-left: 25px;
       position: relative;
       font-weight: 500; }
-      #footer .popular-courses .courses-items .item .content span::before {
+      .footer .popular-courses .courses-items .item .content span::before {
         content: "";
         position: absolute;
         left: 0;
@@ -2471,28 +2471,28 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         background: #b3b3b3;
         height: 1px;
         width: 15px; }
-  #footer .twitter-feed ul {
+  .footer .twitter-feed ul {
     list-style-type: none;
     padding-left: 0px; }
-    #footer .twitter-feed ul li {
+    .footer .twitter-feed ul li {
       display: flex;
       align-items: flex-start;
       margin-bottom: 20px; }
-      #footer .twitter-feed ul li i {
+      .footer .twitter-feed ul li i {
         font-size: 18px;
         color: #737373;
         margin-top: 5px;
         margin-right: 10px; }
-      #footer .twitter-feed ul li .content p {
+      .footer .twitter-feed ul li .content p {
         font-size: 14px;
         color: #b3b3b3;
         font-style: italic;
         line-height: 26px;
         margin-bottom: 5px;
         font-weight: 500; }
-        #footer .twitter-feed ul li .content p a {
+        .footer .twitter-feed ul li .content p a {
           color: #25cdc9; }
-      #footer .twitter-feed ul li .content span {
+      .footer .twitter-feed ul li .content span {
         display: block;
         font-size: 14px;
         color: #b3b3b3;
@@ -2500,7 +2500,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         padding-left: 25px;
         position: relative;
         font-weight: 500; }
-        #footer .twitter-feed ul li .content span::before {
+        .footer .twitter-feed ul li .content span::before {
           content: "";
           position: absolute;
           left: 0;
@@ -2521,20 +2521,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #copyright .photo {
     text-align: right; }
 
-#header-top {
+.header-top {
   background-color: #1f1f1f;
   padding: 9px 0px; }
-  #header-top .dropdown .dropdown-trigger {
+  .header-top .dropdown .dropdown-trigger {
     font-size: 13px;
     text-transform: uppercase;
     color: #e0e0e0;
     font-weight: 500;
     font-family: "Oswald", sans-serif; }
-    #header-top .dropdown .dropdown-trigger i {
+    .header-top .dropdown .dropdown-trigger i {
       color: #25cdc9; }
-  #header-top .search-bar {
+  .header-top .search-bar {
     position: relative; }
-    #header-top .search-bar input {
+    .header-top .search-bar input {
       width: 100%;
       border: none;
       background: #454545;
@@ -2544,27 +2544,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       border-radius: 4px;
       padding-right: 30px;
       height: 28px; }
-      #header-top .search-bar input::placeholder {
+      .header-top .search-bar input::placeholder {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #c7c7c7;
         opacity: 1;
         /* Firefox */ }
-      #header-top .search-bar input:-ms-input-placeholder {
+      .header-top .search-bar input:-ms-input-placeholder {
         /* Internet Explorer 10-11 */
         color: #c7c7c7; }
-      #header-top .search-bar input::-ms-input-placeholder {
+      .header-top .search-bar input::-ms-input-placeholder {
         /* Microsoft Edge */
         color: #c7c7c7; }
-    #header-top .search-bar button {
+    .header-top .search-bar button {
       border: none;
       background: transparent;
       color: #c7c7c7;
       position: absolute;
       right: 10px;
       font-size: 12px; }
-  #header-top .social-links {
+  .header-top .social-links {
     margin-right: 20px; }
-    #header-top .social-links span {
+    .header-top .social-links span {
       font-size: 13px;
       font-weight: 500;
       color: #e0e0e0;
@@ -2572,22 +2572,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       text-transform: uppercase;
       font-family: "Oswald", sans-serif;
       margin-left: 0; }
-    #header-top .social-links ul {
+    .header-top .social-links ul {
       list-style-type: none;
       padding-left: 0px; }
-      #header-top .social-links ul li {
+      .header-top .social-links ul li {
         display: inline-block;
         margin-left: 10px; }
-        #header-top .social-links ul li a {
+        .header-top .social-links ul li a {
           display: inline-block;
           font-size: 12px;
           color: #969696; }
-          #header-top .social-links ul li a:hover {
+          .header-top .social-links ul li a:hover {
             color: #25cdc9; }
-  #header-top .login {
+  .header-top .login {
     position: relative;
     padding-left: 10px; }
-    #header-top .login::before {
+    .header-top .login::before {
       content: "";
       position: absolute;
       left: 0;
@@ -2596,10 +2596,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       height: 26px;
       width: 1px;
       background: #3c3c3c; }
-    #header-top .login a {
+    .header-top .login a {
       display: flex;
       align-items: center; }
-      #header-top .login a i {
+      .header-top .login a i {
         width: 15px;
         height: 15px;
         text-align: center;
@@ -2608,7 +2608,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         background-color: #25cdc9;
         border-radius: 50%;
         font-size: 10px; }
-      #header-top .login a span {
+      .header-top .login a span {
         margin-left: 5px;
         font-size: 13px;
         font-weight: 500;
@@ -2620,17 +2620,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         -ms-transition: all 0.3s ease-out 0s;
         -o-transition: all 0.3s ease-out 0s;
         transition: all 0.3s ease-out 0s; }
-      #header-top .login a:hover span {
+      .header-top .login a:hover span {
         color: #25cdc9; }
 
-#nav {
+.nav-first {
   position: absolute;
   left: 0;
   top: 46px;
   width: 100%;
   z-index: 9;
   height: auto; }
-  #nav .nav-link {
+  .nav-first .nav-link {
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
@@ -2641,15 +2641,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: relative;
     font-family: "Oswald", sans-serif;
     z-index: 1; }
-  #nav .nav-item {
+  .nav-first .nav-item {
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s; }
-    #nav .nav-item.active .nav-link, #nav .nav-item:hover .nav-link {
+    .nav-first .nav-item.active .nav-link, .nav-first .nav-item:hover .nav-link {
       color: #1f1f1f; }
-      #nav .nav-item.active .nav-link::before, #nav .nav-item:hover .nav-link::before {
+      .nav-first .nav-item.active .nav-link::before, .nav-first .nav-item:hover .nav-link::before {
         content: "";
         background-color: #fee823;
         position: absolute;
@@ -2668,19 +2668,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         transition: all 0.3s ease-out 0s;
         box-shadow: 0px 5px 12.09px 0.91px rgba(71, 51, 127, 0.11);
         clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%); }
-  #nav .header-actions {
+  .nav-first .header-actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative; }
-    #nav .header-actions .cart {
+    .nav-first .header-actions .cart {
       margin-right: 26px; }
-      #nav .header-actions .cart > a {
+      .nav-first .header-actions .cart > a {
         color: #fff;
         font-size: 14px;
         position: relative;
         padding-right: 10px; }
-        #nav .header-actions .cart > a span {
+        .nav-first .header-actions .cart > a span {
           background: #25cdc9;
           position: absolute;
           right: 0px;
@@ -2694,7 +2694,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           line-height: 16px;
           color: #fff;
           box-shadow: 0px 5px 12.09px 0.91px rgba(71, 51, 127, 0.14); }
-      #nav .header-actions .cart .mini-cart {
+      .nav-first .header-actions .cart .mini-cart {
         position: absolute;
         left: -161%;
         top: 48px;
@@ -2711,51 +2711,51 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         transition: all 0.3s ease-out 0s;
         transform: translateY(10px);
         visibility: hidden; }
-        #nav .header-actions .cart .mini-cart .items .cart-item {
+        .nav-first .header-actions .cart .mini-cart .items .cart-item {
           display: flex;
           margin-bottom: 10px; }
-          #nav .header-actions .cart .mini-cart .items .cart-item .photo img {
+          .nav-first .header-actions .cart .mini-cart .items .cart-item .photo img {
             width: 100px; }
-          #nav .header-actions .cart .mini-cart .items .cart-item .info {
+          .nav-first .header-actions .cart .mini-cart .items .cart-item .info {
             padding-left: 15px;
             text-align: left;
             padding-right: 25px; }
-            #nav .header-actions .cart .mini-cart .items .cart-item .info h4 {
+            .nav-first .header-actions .cart .mini-cart .items .cart-item .info h4 {
               color: #fff;
               font-size: 15px;
               background: none;
               font-weight: 600; }
-            #nav .header-actions .cart .mini-cart .items .cart-item .info .price span {
+            .nav-first .header-actions .cart .mini-cart .items .cart-item .info .price span {
               color: #ffffffa3;
               font-size: 13px;
               font-weight: 500;
               margin-left: 6px; }
-          #nav .header-actions .cart .mini-cart .items .cart-item .delete {
+          .nav-first .header-actions .cart .mini-cart .items .cart-item .delete {
             font-size: 18px;
             color: white;
             margin-top: 20px; }
-        #nav .header-actions .cart .mini-cart .actions {
+        .nav-first .header-actions .cart .mini-cart .actions {
           padding-top: 25px;
           margin-top: 10px;
           border-top: 1px solid #473151; }
-          #nav .header-actions .cart .mini-cart .actions .total {
+          .nav-first .header-actions .cart .mini-cart .actions .total {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 25px; }
-            #nav .header-actions .cart .mini-cart .actions .total span {
+            .nav-first .header-actions .cart .mini-cart .actions .total span {
               color: #a5a5a5;
               font-weight: 500; }
-      #nav .header-actions .cart:hover .mini-cart {
+      .nav-first .header-actions .cart:hover .mini-cart {
         opacity: 1;
         transform: translateY(0px);
         visibility: visible; }
-    #nav .header-actions .action .btn {
+    .nav-first .header-actions .action .btn {
       font-size: 14px;
       padding: 13px 22px; }
-  #nav .logo-sticky-block {
+  .nav-first .logo-sticky-block {
     display: none; }
-  #nav .mobile-nav-toggler {
+  .nav-first .mobile-nav-toggler {
     position: absolute;
     right: 25px;
     top: 15px;
@@ -2764,7 +2764,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     line-height: 1;
     color: #fff;
     display: none; }
-  #nav .mobile-menu {
+  .nav-first .mobile-menu {
     position: fixed;
     right: 0;
     top: 0;
@@ -2775,7 +2775,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0;
     visibility: hidden;
     z-index: 99; }
-    #nav .mobile-menu .menu-backdrop {
+    .nav-first .mobile-menu .menu-backdrop {
       position: fixed;
       right: 0;
       top: 0;
@@ -2791,7 +2791,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       -ms-transition: all 900ms ease;
       -o-transition: all 900ms ease;
       background: #000; }
-    #nav .mobile-menu .close-btn {
+    .nav-first .mobile-menu .close-btn {
       position: absolute;
       right: 20px;
       top: 30px;
@@ -2805,7 +2805,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       -webkit-transition: all 0.9s ease;
       -o-transition: all 0.9s ease;
       transition: all 0.9s ease; }
-    #nav .mobile-menu .menu-box {
+    .nav-first .mobile-menu .menu-box {
       position: absolute;
       left: 0px;
       top: 0px;
@@ -2822,25 +2822,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       -webkit-transform: translateX(101%);
       -ms-transform: translateX(101%);
       transform: translateX(101%); }
-      #nav .mobile-menu .menu-box .logo {
+      .nav-first .mobile-menu .menu-box .logo {
         position: relative;
         padding: 30px 25px;
         text-align: left; }
-      #nav .mobile-menu .menu-box .menu {
+      .nav-first .mobile-menu .menu-box .menu {
         padding-left: 0px; }
-        #nav .mobile-menu .menu-box .menu ul {
+        .nav-first .mobile-menu .menu-box .menu ul {
           position: relative;
           display: block;
           width: 100%;
           float: none;
           padding: 0; }
-          #nav .mobile-menu .menu-box .menu ul:last-child {
+          .nav-first .mobile-menu .menu-box .menu ul:last-child {
             border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-          #nav .mobile-menu .menu-box .menu ul li {
+          .nav-first .mobile-menu .menu-box .menu ul li {
             position: relative;
             display: block;
             border-top: 1px solid rgba(255, 255, 255, 0.1); }
-            #nav .mobile-menu .menu-box .menu ul li a {
+            .nav-first .mobile-menu .menu-box .menu ul li a {
               position: relative;
               display: block;
               line-height: 24px;
@@ -2853,17 +2853,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
               -o-transition: all 500ms ease;
               transition: all 500ms ease;
               border: none; }
-      #nav .mobile-menu .menu-box .social-links {
+      .nav-first .mobile-menu .menu-box .social-links {
         position: relative;
         text-align: center;
         padding: 30px 25px; }
-        #nav .mobile-menu .menu-box .social-links ul {
+        .nav-first .mobile-menu .menu-box .social-links ul {
           padding-left: 0px; }
-          #nav .mobile-menu .menu-box .social-links ul li {
+          .nav-first .mobile-menu .menu-box .social-links ul li {
             position: relative;
             display: inline-block;
             margin: 0px 10px 10px; }
-            #nav .mobile-menu .menu-box .social-links ul li a {
+            .nav-first .mobile-menu .menu-box .social-links ul li a {
               position: relative;
               line-height: 32px;
               font-size: 16px;
@@ -2871,7 +2871,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
               -webkit-transition: all 500ms ease;
               -o-transition: all 500ms ease;
               transition: all 500ms ease; }
-  #nav.sticky-menu {
+  .nav-first.sticky-menu {
     left: 0;
     margin: auto;
     position: fixed;
@@ -2884,15 +2884,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
     box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
     border-radius: 0; }
-    #nav.sticky-menu .nav-link {
+    .nav-first.sticky-menu .nav-link {
       color: #5d5d5d; }
-    #nav.sticky-menu .cart a {
+    .nav-first.sticky-menu .cart a {
       color: #5d5d5d; }
-    #nav.sticky-menu .logo-sticky-block {
+    .nav-first.sticky-menu .logo-sticky-block {
       display: block; }
-    #nav.sticky-menu .logo-sticky-none {
+    .nav-first.sticky-menu .logo-sticky-none {
       display: none; }
-    #nav.sticky-menu .mobile-nav-toggler {
+    .nav-first.sticky-menu .mobile-nav-toggler {
       color: #1f1f1f; }
 
 .mobile-menu-visible {
@@ -4224,6 +4224,104 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #blog-details .blog-details__content__reply button {
   font-weight: 600; }
 
+#home-courses {
+  padding: 110px 0px;
+  position: relative; }
+  #home-courses .title h2 {
+    margin: 0 0 30px 0; }
+    #home-courses .title h2 span {
+      color: #25cdc9; }
+  #home-courses .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 75px 0; }
+    #home-courses .nav .nav-item a {
+      border: none;
+      line-height: 34px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0 20px;
+      margin: 0 7.5px 10px;
+      background: transparent;
+      color: #767474;
+      border-radius: 30px;
+      transition: 0.3s linear; }
+  #home-courses .tabb-content .tabb-pane .featured-courses-content {
+    text-align: right;
+    padding-right: 30px; }
+    #home-courses .tabb-content .tabb-pane .featured-courses-content .ingredients-span {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      margin-bottom: 15px;
+      line-height: 1;
+      color: #767474; }
+    #home-courses .tabb-content .tabb-pane .featured-courses-content h2 span {
+      color: #25cdc9; }
+    #home-courses .tabb-content .tabb-pane .featured-courses-content p {
+      color: #7d7d7d; }
+  #home-courses .about-triangle {
+    position: absolute;
+    left: 7%;
+    top: 0;
+    z-index: -1; }
+  #home-courses .about-circle {
+    position: absolute;
+    right: 6%;
+    top: 24%;
+    z-index: -1; }
+  #home-courses .about-math {
+    background-image: url("../img/featured_courses_shape.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 366px;
+    margin: 0 auto;
+    z-index: -1; }
+
+#home-categories {
+  background-image: url("../img/cta_bg.jpg");
+  padding-top: 110px;
+  padding-bottom: 120px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box; }
+  #home-categories::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    opacity: 0.7;
+    z-index: -1; }
+  #home-categories .title h2 {
+    font-size: 37px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+    color: #e8e8e8; }
+    #home-categories .title h2 span {
+      color: #fee823; }
+  #home-categories .title p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #e0e0e0; }
+
 #isotope {
   padding: 70px 0 110px; }
   #isotope .isotope-menu {
@@ -4231,14 +4329,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     justify-content: center;
     background-color: white;
     border-radius: 10px;
-    padding: 24px 0 10px;
+    padding: 24px 0 22px;
     margin: 50px 40px 60px 0;
     box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13); }
     #isotope .isotope-menu button {
       background-color: white;
       font-size: 16px;
       font-weight: 500;
-      font-family: 'Roboto', sans-serif;
+      font-family: "Roboto", sans-serif;
       color: #7d7d7d;
       margin-left: 0;
       margin-right: 0;
@@ -4268,7 +4366,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           width: 37px;
           margin: 0 auto;
           background-color: #4eabee;
-          transition: .3s linear; }
+          transition: 0.3s linear; }
   #isotope .courses {
     margin-top: 50px; }
     #isotope .courses .item {
@@ -4349,13 +4447,76 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             font-family: "Oswald", sans-serif;
             line-height: 1; }
 
+#home-category {
+  background-image: url("../img/category_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 110px 0px; }
+  #home-category .category-title {
+    margin: 0 0 70px 0;
+    padding: 0 0 15px 0;
+    position: relative; }
+    #home-category .category-title::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2.5px;
+      margin: 0 auto;
+      background-color: #4eabee; }
+    #home-category .category-title h2 {
+      font-size: 36px;
+      margin: 0 0 20px 0; }
+      #home-category .category-title h2 span {
+        color: #4eabee; }
+  #home-category .category-item a {
+    transition: all 0.6s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 34px 20px;
+    position: relative;
+    transform: translateY(0);
+    margin: 0 10px 20px;
+    z-index: 1; }
+    #home-category .category-item a::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      right: 10px;
+      bottom: 10px;
+      border: 1px dotted #e7e7e7;
+      z-index: -1;
+      box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13); }
+    #home-category .category-item a:hover {
+      transform: translateY(-7px); }
+    #home-category .category-item a i {
+      color: #4eabee;
+      display: block;
+      font-size: 60px;
+      line-height: 1;
+      margin-bottom: 15px; }
+    #home-category .category-item a span {
+      color: #1f1f1f;
+      display: block;
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 500; }
+
 #article {
-  padding: 100px 0px; }
+  padding: 100px 0px;
+  position: relative; }
   #article .article-bg {
     background-image: url("../img/blog_bg.jpg");
     position: absolute;
     left: 0;
-    top: 0;
+    top: -46px;
     width: 100%;
     height: 540px;
     background-position: center;
@@ -4406,7 +4567,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         background-color: #1f1f1f;
         color: #e0e0e0; }
     #article .article-post__item__content {
-      padding: 35px 30px 35px; }
+      padding: 35px 30px 35px;
+      box-shadow: 0px 14px 17px 2px rgba(167, 162, 184, 0.13); }
       #article .article-post__item__content__meta ul {
         margin: 0 0 15px 0;
         padding: 0;
@@ -4434,6 +4596,101 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         color: #7d7d7d; }
       #article .article-post__item__content a {
         color: #1f1f1f; }
+        #article .article-post__item__content a span {
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 4px 0 4px 4px;
+          border-color: transparent transparent transparent #414141;
+          margin-left: 30px;
+          position: relative;
+          transition: 0.4s linear; }
+          #article .article-post__item__content a span::before {
+            content: "";
+            position: absolute;
+            right: 4px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 22px;
+            height: 2px;
+            background: #414141;
+            transition: 0.4s linear; }
+        #article .article-post__item__content a:hover span {
+          margin-left: 50px; }
+          #article .article-post__item__content a:hover span::before {
+            width: 42px; }
+
+#home-newsletter {
+  padding: 120px 0px;
+  background-image: url("../img/newsletter_bg.jpg");
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  z-index: 1; }
+  #home-newsletter .title {
+    color: #e8e8e8; }
+    #home-newsletter .title span {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      margin-bottom: 15px;
+      line-height: 1; }
+    #home-newsletter .title h2 {
+      font-size: 36px;
+      margin-bottom: 20px; }
+    #home-newsletter .title p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 28px; }
+  #home-newsletter .newsletter-form {
+    background-image: url("../img/newsletter_shape.png");
+    margin-left: 40px;
+    background-size: cover;
+    background-position: left center;
+    padding: 35px 30px 45px 65px; }
+    #home-newsletter .newsletter-form label {
+      display: inline-block;
+      color: #414141;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 20px; }
+    #home-newsletter .newsletter-form form {
+      display: flex;
+      align-items: center; }
+      #home-newsletter .newsletter-form form input {
+        border: none;
+        background: #fff;
+        color: #666666;
+        font-weight: 500;
+        padding: 14px 20px;
+        flex-grow: 1;
+        font-size: 14px; }
+      #home-newsletter .newsletter-form form button {
+        text-transform: uppercase;
+        border: none;
+        padding: 0 20px;
+        background: #25cdc9;
+        color: #fff;
+        line-height: 49px;
+        width: 150px;
+        margin-left: 8px;
+        border: medium none;
+        border-radius: 0;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0; }
+        #home-newsletter .newsletter-form form button i {
+          margin: 0 3px 0 0; }
+  #home-newsletter .newsletter-bell {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8%;
+    z-index: -1; }
 
 @media (max-width: 991.98px) {
   #breadcrumb .title h2 {
