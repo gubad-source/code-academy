@@ -592,3 +592,133 @@
   z-index: -1;
 }
 }
+
+#lessons {
+  position: relative;
+  padding: 110px 0px;
+
+  .shape-left {
+    position: absolute;
+    top: 0;
+    left: 10%;
+  }
+
+  .shape-right {
+    position: absolute;
+    right: 30px;
+  }
+
+  .lessons {
+    .lesson-item {
+      position: relative;
+      margin-bottom: 20px;
+      .info {
+        position: absolute;
+        bottom: 40px;
+        text-align: center;
+        left: 11px;
+        width: 100%;
+        @include transition(all 0.3s ease-out 0s);
+        a {
+          border-radius: 6px;
+          background-color: rgba(255, 255, 255, 0.4);
+          color: #fff;
+          display: inline-block;
+          padding: 13px 20px;
+          font-size: 16px;
+          font-weight: 500;
+          font-family: $primary_font_family;
+          margin-bottom: 15px;
+          opacity: 0;
+          @include transition(all 0.3s ease-out 0s);
+          i {
+            font-size: 20px;
+            margin-right: 10px;
+            color: $primary-color;
+          }
+
+          span {
+            color: white;
+          }
+        }
+
+        h3 {
+          font-size: 20px;
+          color: #fff;
+          margin-bottom: 10px;
+        }
+        span {
+          color: $primary-color;
+        }
+      }
+
+      &:hover {
+        .info {
+          transform: translateY(-10px);
+
+          a {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .paths {
+    padding-top: 100px;
+    .text {
+      & > span {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: block;
+        margin-bottom: 15px;
+        line-height: 1;
+        color: $secondary-color;
+      }
+      h3 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        span {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .progress-bars {
+      .item {
+        margin-bottom: 20px;
+        .info {
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+          margin-bottom: 11px;
+          font-family: $primary_font_family;
+          color: #414141;
+        }
+        .progress {
+          height: 10px;
+          border-radius: 0;
+          .bg-warning {
+            background-color: darken(
+              $color: $primary-color,
+              $amount: 10
+            ) !important;
+          }
+          .bg-success {
+            background-color: darken(
+              $color: $secondary-color,
+              $amount: 10
+            ) !important;
+          }
+          .bg-dark {
+            background-color: darken(
+              $color: $black-color,
+              $amount: 10
+            ) !important;
+          }
+        }
+      }
+    }
+  }
+}

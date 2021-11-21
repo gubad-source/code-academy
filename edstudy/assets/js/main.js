@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    //   new WOW().init();
+  
     if ($('#isotope .courses').length) {
         var $grid = $('#isotope .courses').isotope({
             itemSelector: '.grid-item',
@@ -71,4 +71,6 @@ $(document).ready(function(){
         })
     })
   
+
+      new WOW().init();
 })
