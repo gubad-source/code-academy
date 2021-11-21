@@ -1,6 +1,20 @@
 $(document).ready(function(){
 
     //   new WOW().init();
+    if ($('#isotope .courses').length) {
+        var $grid = $('#isotope .courses').isotope({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+        });
+
+        $('.isotope-menu').on('click', 'button', function () {
+           
+            $(".isotope-menu button.active").removeClass("active");
+            $(this).addClass("active");
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+        });
+    }
 
     $("#treeview .open").click(function (e) {
         e.preventDefault();

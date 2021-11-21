@@ -4051,7 +4051,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       right: 10px;
       bottom: 10px;
       border: 1px dotted #e7e7e7;
-      z-index: -1; }
+      z-index: -1;
+      box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13); }
     #courses-category .category-item a:hover {
       transform: translateY(-7px); }
     #courses-category .category-item a i {
@@ -4222,6 +4223,131 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #blog-details .blog-details__content__reply button {
   font-weight: 600; }
+
+#isotope {
+  padding: 70px 0 110px; }
+  #isotope .isotope-menu {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 24px 0 10px;
+    margin: 50px 40px 60px 0;
+    box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13); }
+    #isotope .isotope-menu button {
+      background-color: white;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: 'Roboto', sans-serif;
+      color: #7d7d7d;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0 35px;
+      border-radius: 0;
+      position: relative;
+      border: none;
+      outline: none; }
+      #isotope .isotope-menu button:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 36px;
+        width: 1px;
+        background: #e3e3e3; }
+      #isotope .isotope-menu button.active {
+        color: #4eabee; }
+        #isotope .isotope-menu button.active::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -19px;
+          height: 3px;
+          width: 37px;
+          margin: 0 auto;
+          background-color: #4eabee;
+          transition: .3s linear; }
+  #isotope .courses {
+    margin-top: 50px; }
+    #isotope .courses .item {
+      margin-bottom: 50px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13); }
+      #isotope .courses .item .photo {
+        position: relative; }
+        #isotope .courses .item .photo img {
+          max-width: 100%;
+          border-radius: 6px 6px 0 0; }
+        #isotope .courses .item .photo .label {
+          position: absolute;
+          left: 0;
+          top: 20px;
+          padding: 0 15px 0 20px;
+          background: #fee823;
+          line-height: 28px;
+          font-size: 14px;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-family: "Oswald", sans-serif;
+          color: #414141; }
+          #isotope .courses .item .photo .label::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 14px 0 14px 15px;
+            border-color: transparent transparent transparent #fee823;
+            right: -15px; }
+      #isotope .courses .item .info {
+        border: 1px solid #ebebeb;
+        border-radius: 0 0 6px 6px;
+        padding: 25px 20px 20px; }
+        #isotope .courses .item .info .category {
+          font-size: 14px;
+          font-weight: 500;
+          color: #7d7d7d; }
+          #isotope .courses .item .info .category a {
+            font-style: italic;
+            color: #25cdc9; }
+        #isotope .courses .item .info h4 {
+          font-size: 18px;
+          line-height: 1.5;
+          margin-bottom: 0; }
+        #isotope .courses .item .info .rating ul {
+          list-style: none;
+          display: flex;
+          padding: 0;
+          list-style: none;
+          justify-content: space-between; }
+        #isotope .courses .item .info .rating__info {
+          display: flex; }
+          #isotope .courses .item .info .rating__info__star {
+            margin: 0 15px 0 0; }
+            #isotope .courses .item .info .rating__info__star i {
+              color: #fee823;
+              font-size: 12px; }
+        #isotope .courses .item .info .rating__level i {
+          color: #4eabee; }
+        #isotope .courses .item .info .bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 20px;
+          border-top: 1px solid #e1e1e1; }
+          #isotope .courses .item .info .bottom .author {
+            color: #414141; }
+            #isotope .courses .item .info .bottom .author a {
+              font-style: italic;
+              color: #7d7d7d; }
+          #isotope .courses .item .info .bottom .price {
+            font-size: 16px;
+            color: #414141;
+            font-family: "Oswald", sans-serif;
+            line-height: 1; }
 
 #article {
   padding: 100px 0px; }

@@ -1,3 +1,166 @@
+#isotope{
+  padding: 70px 0 110px;
+  .isotope-menu{
+    display: flex;
+    justify-content: center;
+background-color: white;
+    border-radius: 10px;
+    padding: 24px 0 10px;
+    margin: 50px 40px 60px 0;
+    box-shadow: $shadow;
+    button{
+      background-color: white;
+      font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: $body-color;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 35px;
+    border-radius: 0;
+    position: relative;
+    border: none;
+    outline: none;
+    &:not(:last-child){
+      &::before{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 36px;
+        width: 1px;
+        background: #e3e3e3;
+      }
+    }
+  &.active{
+    color: $twitter-color;
+    &::after{
+      content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -19px;
+    height: 3px;
+    width: 37px;
+    margin: 0 auto;
+    background-color: $twitter-color;
+    transition: .3s linear;
+    }
+  }
+    }
+  }
+  .courses {
+    margin-top: 50px;
+    .item {
+      margin-bottom: 50px;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13);
+      .photo {
+        position: relative;
+        img {
+          max-width: 100%;
+          border-radius: 6px 6px 0 0;
+        }
+        .label {
+          position: absolute;
+          left: 0;
+          top: 20px;
+          padding: 0 15px 0 20px;
+          background: $primary-color;
+          line-height: 28px;
+          font-size: 14px;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-family: $primary_font_family;
+          color: $title-color;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 14px 0 14px 15px;
+            border-color: transparent transparent transparent $primary-color;
+            right: -15px;
+          }
+        }
+      }
+
+      .info {
+        border: 1px solid #ebebeb;
+        border-radius: 0 0 6px 6px;
+        padding: 25px 20px 20px;
+        .category {
+          font-size: 14px;
+          font-weight: 500;
+          color: $body-color;
+          a {
+            font-style: italic;
+            color: $secondary-color;
+          }
+        }
+
+        h4 {
+          font-size: 18px;
+          line-height: 1.5;
+          margin-bottom: 0;
+        }
+
+        .rating {
+          ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            list-style: none;
+            justify-content: space-between;
+          }
+          &__info {
+            display: flex;
+            &__star {
+              margin: 0 15px 0 0;
+              i {
+                color: $primary-color;
+                font-size: 12px;
+              }
+            }
+            &__point {
+            }
+          }
+          &__level {
+            i {
+              color: $twitter-color;
+            }
+          }
+        }
+
+        .bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-top: 20px;
+          border-top: 1px solid #e1e1e1;
+          .author {
+            color: $title-color;
+            a {
+              font-style: italic;
+              color: $body-color;
+            }
+          }
+          .price {
+            font-size: 16px;
+            color: $title-color;
+            font-family: $primary_font_family;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
 #article {
   padding: 100px 0px;
   .article-bg {
