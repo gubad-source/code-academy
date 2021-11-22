@@ -1,3 +1,4 @@
+@import 'common/font';
 @import 'common/mixin';
 @import 'common/variables';
 @import 'common/button';
@@ -5,11 +6,13 @@
 @import 'common/pagination';
 @import 'common/breadcrumb';
 @import 'common/blog_sidebar';
+@import 'common/section';
 
 
 @import 'sections/back_to_top';
 @import 'sections/footer';
 @import 'sections/header';
+
 
 
 @import 'pages/about';

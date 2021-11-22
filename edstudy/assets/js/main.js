@@ -90,5 +90,15 @@ $(document).ready(function(){
         });
     }
 
+    if($(".mobile-nav-toggler").length){
+        $(".mobile-nav-toggler").click(function(){
+            $(document.body).addClass('mobile-menu-visible');
+        });
+
+        $(".mobile-menu .close-btn").click(function(){
+            $(document.body).removeClass('mobile-menu-visible');
+        });
+    }
+
       new WOW().init();
 })

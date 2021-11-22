@@ -1,4 +1,47 @@
 @media (max-width: 991.98px) {
+    header {
+        .header-top {
+          display: none;
+        }
+       .nav-first {
+          top: 0;
+          .navbar {
+            .navbar-collapse {
+              display: none;
+            }
+          }
+          .header-actions {
+            display: none;
+          }
+    
+          .mobile-nav-toggler {
+            display: block;
+          }
+        }
+      }
+    
+      footer {
+        #footer {
+          .about,
+          .quick-links,
+          .popular-courses,
+          .twitter-feed {
+            margin-bottom: 50px;
+          }
+        }
+    
+        #copyright {
+          .text {
+            text-align: center;
+            p {
+              margin-bottom: 10px;
+            }
+          }
+          .photo {
+            text-align: center;
+          }
+        }
+      }
     #breadcrumb{
         .title{
             h2{

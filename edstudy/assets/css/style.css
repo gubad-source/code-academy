@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap");
 .btn {
   border-radius: 0;
   padding: 21px 25px;
@@ -2555,6 +2556,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         color: #7d7d7d;
         line-height: 32px; }
 
+.section-title {
+  font-family: "Oswald", sans-serif;
+  margin: 0 0 70px 0;
+  padding: 0 0 15px 0;
+  position: relative; }
+  .section-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2.5px;
+    margin: 0 auto;
+    background-color: #4eabee; }
+  .section-title h2 {
+    font-size: 36px;
+    margin: 0 0 20px 0; }
+    .section-title h2 span {
+      color: #25cdc9; }
+
 .back-to-top {
   position: fixed;
   right: 30px;
@@ -2816,6 +2838,38 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width: 100%;
   z-index: 9;
   height: auto; }
+  .nav-first .navbar .collapse ul li {
+    position: relative; }
+    .nav-first .navbar .collapse ul li:hover ul {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1); }
+    .nav-first .navbar .collapse ul li ul {
+      box-sizing: border-box;
+      list-style: none;
+      margin: 0;
+      position: absolute;
+      background-color: white;
+      z-index: 9;
+      border: none;
+      display: block;
+      left: 0;
+      opacity: 0;
+      padding: 18px 0;
+      right: 0;
+      top: 100%;
+      visibility: hidden;
+      min-width: 230px;
+      border: 1px solid #f5f5f5;
+      background: #ffffff;
+      margin: 0;
+      transform: scale(1, 0);
+      transform-origin: 0 0;
+      transition: all 0.3s ease-in-out; }
+      .nav-first .navbar .collapse ul li ul li {
+        padding: 0 0 10px 24px; }
+        .nav-first .navbar .collapse ul li ul li a {
+          color: #767474; }
   .nav-first .nav-link {
     font-size: 15px;
     font-weight: 500;
@@ -4218,6 +4272,99 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #blog-details .blog-details__content__reply button {
     font-weight: 600; }
 
+#lessons {
+  position: relative;
+  padding: 110px 0px; }
+  #lessons .section-left-name {
+    position: absolute;
+    left: -1%;
+    top: 37%;
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #f8f7f7;
+    font-family: 'Oswald', sans-serif;
+    transform: rotate(-90deg);
+    z-index: -1; }
+  #lessons .lessons .lesson-item {
+    position: relative;
+    margin-bottom: 20px; }
+    #lessons .lessons .lesson-item .info {
+      position: absolute;
+      bottom: 40px;
+      text-align: center;
+      left: 11px;
+      width: 100%;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
+      #lessons .lessons .lesson-item .info a {
+        border-radius: 6px;
+        background-color: rgba(255, 255, 255, 0.4);
+        color: #fff;
+        display: inline-block;
+        padding: 13px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Oswald", sans-serif;
+        margin-bottom: 15px;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -ms-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s; }
+        #lessons .lessons .lesson-item .info a i {
+          font-size: 20px;
+          margin-right: 10px;
+          color: #fee823; }
+        #lessons .lessons .lesson-item .info a span {
+          color: white; }
+      #lessons .lessons .lesson-item .info h3 {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 10px; }
+      #lessons .lessons .lesson-item .info span {
+        color: #fee823; }
+    #lessons .lessons .lesson-item:hover .info {
+      transform: translateY(-10px); }
+      #lessons .lessons .lesson-item:hover .info a {
+        opacity: 1; }
+  #lessons .paths {
+    padding-top: 100px; }
+    #lessons .paths .text > span {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      margin-bottom: 15px;
+      line-height: 1;
+      color: #25cdc9; }
+    #lessons .paths .text h3 {
+      font-size: 36px;
+      margin-bottom: 20px; }
+      #lessons .paths .text h3 span {
+        color: #25cdc9; }
+    #lessons .paths .progress-bars .item {
+      margin-bottom: 20px; }
+      #lessons .paths .progress-bars .item .info {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin-bottom: 11px;
+        font-family: "Oswald", sans-serif;
+        color: #414141; }
+      #lessons .paths .progress-bars .item .progress {
+        height: 10px;
+        border-radius: 0; }
+        #lessons .paths .progress-bars .item .progress .bg-warning {
+          background-color: #edd501 !important; }
+        #lessons .paths .progress-bars .item .progress .bg-success {
+          background-color: #1da29f !important; }
+        #lessons .paths .progress-bars .item .progress .bg-dark {
+          background-color: #060606 !important; }
+
 #home-courses {
   padding: 110px 0px;
   position: relative; }
@@ -4324,7 +4471,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-color: white;
     border-radius: 10px;
     padding: 24px 0 22px;
-    margin: 50px 40px 60px 0;
+    margin: 0px 40px 60px 0;
     box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13); }
     #isotope .isotope-menu button {
       background-color: white;
@@ -4361,110 +4508,89 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           margin: 0 auto;
           background-color: #4eabee;
           transition: 0.3s linear; }
-  #isotope .courses {
-    margin-top: 50px; }
-    #isotope .courses .item {
-      margin-bottom: 50px;
-      border-radius: 6px;
-      background: #fff;
-      box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13); }
-      #isotope .courses .item .photo {
-        position: relative; }
-        #isotope .courses .item .photo img {
-          max-width: 100%;
-          border-radius: 6px 6px 0 0; }
-        #isotope .courses .item .photo .label {
+  #isotope .courses .item {
+    margin-bottom: 50px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13); }
+    #isotope .courses .item .photo {
+      position: relative; }
+      #isotope .courses .item .photo img {
+        max-width: 100%;
+        border-radius: 6px 6px 0 0; }
+      #isotope .courses .item .photo .label {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        padding: 0 15px 0 20px;
+        background: #fee823;
+        line-height: 28px;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: "Oswald", sans-serif;
+        color: #414141; }
+        #isotope .courses .item .photo .label::after {
+          content: "";
           position: absolute;
-          left: 0;
-          top: 20px;
-          padding: 0 15px 0 20px;
-          background: #fee823;
-          line-height: 28px;
-          font-size: 14px;
-          font-weight: 500;
-          text-transform: uppercase;
-          font-family: "Oswald", sans-serif;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 14px 0 14px 15px;
+          border-color: transparent transparent transparent #fee823;
+          right: -15px; }
+    #isotope .courses .item .info {
+      border: 1px solid #ebebeb;
+      border-radius: 0 0 6px 6px;
+      padding: 25px 20px 20px; }
+      #isotope .courses .item .info .category {
+        font-size: 14px;
+        font-weight: 500;
+        color: #7d7d7d; }
+        #isotope .courses .item .info .category a {
+          font-style: italic;
+          color: #25cdc9; }
+      #isotope .courses .item .info h4 {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 0; }
+      #isotope .courses .item .info .rating ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        list-style: none;
+        justify-content: space-between; }
+      #isotope .courses .item .info .rating__info {
+        display: flex; }
+        #isotope .courses .item .info .rating__info__star {
+          margin: 0 15px 0 0; }
+          #isotope .courses .item .info .rating__info__star i {
+            color: #fee823;
+            font-size: 12px; }
+      #isotope .courses .item .info .rating__level i {
+        color: #4eabee; }
+      #isotope .courses .item .info .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 20px;
+        border-top: 1px solid #e1e1e1; }
+        #isotope .courses .item .info .bottom .author {
           color: #414141; }
-          #isotope .courses .item .photo .label::after {
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 14px 0 14px 15px;
-            border-color: transparent transparent transparent #fee823;
-            right: -15px; }
-      #isotope .courses .item .info {
-        border: 1px solid #ebebeb;
-        border-radius: 0 0 6px 6px;
-        padding: 25px 20px 20px; }
-        #isotope .courses .item .info .category {
-          font-size: 14px;
-          font-weight: 500;
-          color: #7d7d7d; }
-          #isotope .courses .item .info .category a {
+          #isotope .courses .item .info .bottom .author a {
             font-style: italic;
-            color: #25cdc9; }
-        #isotope .courses .item .info h4 {
-          font-size: 18px;
-          line-height: 1.5;
-          margin-bottom: 0; }
-        #isotope .courses .item .info .rating ul {
-          list-style: none;
-          display: flex;
-          padding: 0;
-          list-style: none;
-          justify-content: space-between; }
-        #isotope .courses .item .info .rating__info {
-          display: flex; }
-          #isotope .courses .item .info .rating__info__star {
-            margin: 0 15px 0 0; }
-            #isotope .courses .item .info .rating__info__star i {
-              color: #fee823;
-              font-size: 12px; }
-        #isotope .courses .item .info .rating__level i {
-          color: #4eabee; }
-        #isotope .courses .item .info .bottom {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding-top: 20px;
-          border-top: 1px solid #e1e1e1; }
-          #isotope .courses .item .info .bottom .author {
-            color: #414141; }
-            #isotope .courses .item .info .bottom .author a {
-              font-style: italic;
-              color: #7d7d7d; }
-          #isotope .courses .item .info .bottom .price {
-            font-size: 16px;
-            color: #414141;
-            font-family: "Oswald", sans-serif;
-            line-height: 1; }
+            color: #7d7d7d; }
+        #isotope .courses .item .info .bottom .price {
+          font-size: 16px;
+          color: #414141;
+          font-family: "Oswald", sans-serif;
+          line-height: 1; }
 
 #home-category {
   background-image: url("../img/category_bg.jpg");
   background-position: center;
   background-size: cover;
   padding: 110px 0px; }
-  #home-category .category-title {
-    margin: 0 0 70px 0;
-    padding: 0 0 15px 0;
-    position: relative; }
-    #home-category .category-title::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 50px;
-      height: 2.5px;
-      margin: 0 auto;
-      background-color: #4eabee; }
-    #home-category .category-title h2 {
-      font-size: 36px;
-      margin: 0 0 20px 0; }
-      #home-category .category-title h2 span {
-        color: #4eabee; }
   #home-category .category-item a {
     transition: all 0.6s ease;
     text-decoration: none;
@@ -4686,96 +4812,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     right: 8%;
     z-index: -1; }
 
-#lessons {
-  position: relative;
-  padding: 110px 0px; }
-  #lessons .shape-left {
-    position: absolute;
-    top: 0;
-    left: 10%; }
-  #lessons .shape-right {
-    position: absolute;
-    right: 30px; }
-  #lessons .lessons .lesson-item {
-    position: relative;
-    margin-bottom: 20px; }
-    #lessons .lessons .lesson-item .info {
-      position: absolute;
-      bottom: 40px;
-      text-align: center;
-      left: 11px;
-      width: 100%;
-      -webkit-transition: all 0.3s ease-out 0s;
-      -moz-transition: all 0.3s ease-out 0s;
-      -ms-transition: all 0.3s ease-out 0s;
-      -o-transition: all 0.3s ease-out 0s;
-      transition: all 0.3s ease-out 0s; }
-      #lessons .lessons .lesson-item .info a {
-        border-radius: 6px;
-        background-color: rgba(255, 255, 255, 0.4);
-        color: #fff;
-        display: inline-block;
-        padding: 13px 20px;
-        font-size: 16px;
-        font-weight: 500;
-        font-family: "Oswald", sans-serif;
-        margin-bottom: 15px;
-        opacity: 0;
-        -webkit-transition: all 0.3s ease-out 0s;
-        -moz-transition: all 0.3s ease-out 0s;
-        -ms-transition: all 0.3s ease-out 0s;
-        -o-transition: all 0.3s ease-out 0s;
-        transition: all 0.3s ease-out 0s; }
-        #lessons .lessons .lesson-item .info a i {
-          font-size: 20px;
-          margin-right: 10px;
-          color: #fee823; }
-        #lessons .lessons .lesson-item .info a span {
-          color: white; }
-      #lessons .lessons .lesson-item .info h3 {
-        font-size: 20px;
-        color: #fff;
-        margin-bottom: 10px; }
-      #lessons .lessons .lesson-item .info span {
-        color: #fee823; }
-    #lessons .lessons .lesson-item:hover .info {
-      transform: translateY(-10px); }
-      #lessons .lessons .lesson-item:hover .info a {
-        opacity: 1; }
-  #lessons .paths {
-    padding-top: 100px; }
-    #lessons .paths .text > span {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      display: block;
-      margin-bottom: 15px;
-      line-height: 1;
-      color: #25cdc9; }
-    #lessons .paths .text h3 {
-      font-size: 36px;
-      margin-bottom: 20px; }
-      #lessons .paths .text h3 span {
-        color: #25cdc9; }
-    #lessons .paths .progress-bars .item {
-      margin-bottom: 20px; }
-      #lessons .paths .progress-bars .item .info {
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        margin-bottom: 11px;
-        font-family: "Oswald", sans-serif;
-        color: #414141; }
-      #lessons .paths .progress-bars .item .progress {
-        height: 10px;
-        border-radius: 0; }
-        #lessons .paths .progress-bars .item .progress .bg-warning {
-          background-color: #edd501 !important; }
-        #lessons .paths .progress-bars .item .progress .bg-success {
-          background-color: #1da29f !important; }
-        #lessons .paths .progress-bars .item .progress .bg-dark {
-          background-color: #060606 !important; }
-
 #vision-area {
   height: 100vh;
   background-image: url("../img/slider_bg01.jpg");
@@ -4783,6 +4819,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-size: cover;
   display: flex;
   align-items: center; }
+  #vision-area .vision-content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -24px;
+    background-color: #fee823;
+    width: 0.4%;
+    height: 100%;
+    z-index: 6; }
   #vision-area .vision-content h6 {
     color: #e3e3e3; }
   #vision-area .vision-content h2 {
@@ -4794,6 +4839,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       color: #fee823; }
 
 @media (max-width: 991.98px) {
+  header .header-top {
+    display: none; }
+  header .nav-first {
+    top: 0; }
+    header .nav-first .navbar .navbar-collapse {
+      display: none; }
+    header .nav-first .header-actions {
+      display: none; }
+    header .nav-first .mobile-nav-toggler {
+      display: block; }
+  footer #footer .about,
+  footer #footer .quick-links,
+  footer #footer .popular-courses,
+  footer #footer .twitter-feed {
+    margin-bottom: 50px; }
+  footer #copyright .text {
+    text-align: center; }
+    footer #copyright .text p {
+      margin-bottom: 10px; }
+  footer #copyright .photo {
+    text-align: center; }
   #breadcrumb .title h2 {
     font-size: 25px;
     text-align: center; }

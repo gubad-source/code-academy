@@ -1,0 +1,26 @@
+.section-title {
+    font-family: $primary_font_family;
+    margin: 0 0 70px 0;
+    padding: 0 0 15px 0;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 50px;
+      height: 2.5px;
+      margin: 0 auto;
+      background-color: $twitter-color;
+    }
+    h2 {
+      font-size: 36px;
+      margin: 0 0 20px 0;
+      span {
+        color: $secondary-color;
+      }
+    }
+    p {
+    }
+  }

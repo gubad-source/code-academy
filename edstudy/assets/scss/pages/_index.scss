@@ -1,4 +1,134 @@
+#lessons {
+  position: relative;
+  padding: 110px 0px;
 
+  .section-left-name{
+    position: absolute;
+    left: -1%;
+    top: 37%;
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #f8f7f7;
+    font-family: 'Oswald', sans-serif;
+    transform: rotate(
+-90deg);
+    z-index: -1;
+  }
+
+  .lessons {
+    .lesson-item {
+      position: relative;
+      margin-bottom: 20px;
+      .info {
+        position: absolute;
+        bottom: 40px;
+        text-align: center;
+        left: 11px;
+        width: 100%;
+        @include transition(all 0.3s ease-out 0s);
+        a {
+          border-radius: 6px;
+          background-color: rgba(255, 255, 255, 0.4);
+          color: #fff;
+          display: inline-block;
+          padding: 13px 20px;
+          font-size: 16px;
+          font-weight: 500;
+          font-family: $primary_font_family;
+          margin-bottom: 15px;
+          opacity: 0;
+          @include transition(all 0.3s ease-out 0s);
+          i {
+            font-size: 20px;
+            margin-right: 10px;
+            color: $primary-color;
+          }
+
+          span {
+            color: white;
+          }
+        }
+
+        h3 {
+          font-size: 20px;
+          color: #fff;
+          margin-bottom: 10px;
+        }
+        span {
+          color: $primary-color;
+        }
+      }
+
+      &:hover {
+        .info {
+          transform: translateY(-10px);
+
+          a {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .paths {
+    padding-top: 100px;
+    .text {
+      & > span {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: block;
+        margin-bottom: 15px;
+        line-height: 1;
+        color: $secondary-color;
+      }
+      h3 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        span {
+          color: $secondary-color;
+        }
+      }
+    }
+
+    .progress-bars {
+      .item {
+        margin-bottom: 20px;
+        .info {
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+          margin-bottom: 11px;
+          font-family: $primary_font_family;
+          color: #414141;
+        }
+        .progress {
+          height: 10px;
+          border-radius: 0;
+          .bg-warning {
+            background-color: darken(
+              $color: $primary-color,
+              $amount: 10
+            ) !important;
+          }
+          .bg-success {
+            background-color: darken(
+              $color: $secondary-color,
+              $amount: 10
+            ) !important;
+          }
+          .bg-dark {
+            background-color: darken(
+              $color: $black-color,
+              $amount: 10
+            ) !important;
+          }
+        }
+      }
+    }
+  }
+}
 #home-courses {
   padding: 110px 0px;
   position: relative;
@@ -132,7 +262,7 @@
     background-color: white;
     border-radius: 10px;
     padding: 24px 0 22px;
-    margin: 50px 40px 60px 0;
+    margin: 0px 40px 60px 0;
     box-shadow: $shadow;
     button {
       background-color: white;
@@ -177,7 +307,6 @@
     }
   }
   .courses {
-    margin-top: 50px;
     .item {
       margin-bottom: 50px;
       border-radius: 6px;
@@ -291,31 +420,7 @@
   background-position: center;
   background-size: cover;
   padding: 110px 0px;
-  .category-title {
-    margin: 0 0 70px 0;
-    padding: 0 0 15px 0;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 50px;
-      height: 2.5px;
-      margin: 0 auto;
-      background-color: $twitter-color;
-    }
-    h2 {
-      font-size: 36px;
-      margin: 0 0 20px 0;
-      span {
-        color: $twitter-color;
-      }
-    }
-    p {
-    }
-  }
+
   .category-item {
    
     a {
@@ -593,135 +698,7 @@
 }
 }
 
-#lessons {
-  position: relative;
-  padding: 110px 0px;
 
-  .shape-left {
-    position: absolute;
-    top: 0;
-    left: 10%;
-  }
-
-  .shape-right {
-    position: absolute;
-    right: 30px;
-  }
-
-  .lessons {
-    .lesson-item {
-      position: relative;
-      margin-bottom: 20px;
-      .info {
-        position: absolute;
-        bottom: 40px;
-        text-align: center;
-        left: 11px;
-        width: 100%;
-        @include transition(all 0.3s ease-out 0s);
-        a {
-          border-radius: 6px;
-          background-color: rgba(255, 255, 255, 0.4);
-          color: #fff;
-          display: inline-block;
-          padding: 13px 20px;
-          font-size: 16px;
-          font-weight: 500;
-          font-family: $primary_font_family;
-          margin-bottom: 15px;
-          opacity: 0;
-          @include transition(all 0.3s ease-out 0s);
-          i {
-            font-size: 20px;
-            margin-right: 10px;
-            color: $primary-color;
-          }
-
-          span {
-            color: white;
-          }
-        }
-
-        h3 {
-          font-size: 20px;
-          color: #fff;
-          margin-bottom: 10px;
-        }
-        span {
-          color: $primary-color;
-        }
-      }
-
-      &:hover {
-        .info {
-          transform: translateY(-10px);
-
-          a {
-            opacity: 1;
-          }
-        }
-      }
-    }
-  }
-
-  .paths {
-    padding-top: 100px;
-    .text {
-      & > span {
-        font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        display: block;
-        margin-bottom: 15px;
-        line-height: 1;
-        color: $secondary-color;
-      }
-      h3 {
-        font-size: 36px;
-        margin-bottom: 20px;
-        span {
-          color: $secondary-color;
-        }
-      }
-    }
-
-    .progress-bars {
-      .item {
-        margin-bottom: 20px;
-        .info {
-          display: flex;
-          justify-content: space-between;
-          align-content: center;
-          margin-bottom: 11px;
-          font-family: $primary_font_family;
-          color: #414141;
-        }
-        .progress {
-          height: 10px;
-          border-radius: 0;
-          .bg-warning {
-            background-color: darken(
-              $color: $primary-color,
-              $amount: 10
-            ) !important;
-          }
-          .bg-success {
-            background-color: darken(
-              $color: $secondary-color,
-              $amount: 10
-            ) !important;
-          }
-          .bg-dark {
-            background-color: darken(
-              $color: $black-color,
-              $amount: 10
-            ) !important;
-          }
-        }
-      }
-    }
-  }
-}
 #vision-area{
   height: 100vh;
   background-image: url('../img/slider_bg01.jpg');
@@ -730,6 +707,16 @@
     display: flex;
     align-items: center;
   .vision-content{
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -24px;
+      background-color:$primary-color;
+      width: 0.4%;
+      height: 100%;
+      z-index: 6;
+    }
     h6{
       color: lighten($color: $white-color, $amount: 1);
       img{
