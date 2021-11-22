@@ -1,0 +1,16 @@
+.section-left-name {
+    position: absolute;
+    left: -1%;
+    top: 37%;
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #efefef;
+    font-family: "Oswald", sans-serif;
+    transform: rotate(-90deg);
+    &.iso{
+        left: -6%;
+        top: 49%;
+    }
+  }
+
+  

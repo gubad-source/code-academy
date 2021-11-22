@@ -56,6 +56,10 @@ $(document).ready(function(){
         elem.addEventListener('click',function(e){
             e.preventDefault();
             e.stopPropagation();
+
+            let navItemSelected=document.querySelector('.nav-item.activee');
+            navItemSelected.classList.remove('activee');
+            elem.classList.add('activee');
          
             let tabbPaneTargetSelected = document.querySelector(
                 `[data-target='${elem.getAttribute("data-source")}']`
@@ -90,15 +94,7 @@ $(document).ready(function(){
         });
     }
 
-    if($(".mobile-nav-toggler").length){
-        $(".mobile-nav-toggler").click(function(){
-            $(document.body).addClass('mobile-menu-visible');
-        });
 
-        $(".mobile-menu .close-btn").click(function(){
-            $(document.body).removeClass('mobile-menu-visible');
-        });
-    }
 
       new WOW().init();
 })

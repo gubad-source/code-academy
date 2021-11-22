@@ -2576,6 +2576,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin: 0 0 20px 0; }
     .section-title h2 span {
       color: #25cdc9; }
+  .section-title p {
+    color: #7d7d7d;
+    font-weight: "Roboto", sans-serif; }
+
+.section-left-name {
+  position: absolute;
+  left: -1%;
+  top: 37%;
+  font-size: 96px;
+  text-transform: uppercase;
+  color: #efefef;
+  font-family: "Oswald", sans-serif;
+  transform: rotate(-90deg); }
+  .section-left-name.iso {
+    left: -6%;
+    top: 49%; }
 
 .back-to-top {
   position: fixed;
@@ -3134,34 +3150,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       display: none; }
     .nav-first.sticky-menu .mobile-nav-toggler {
       color: #1f1f1f; }
-
-.mobile-menu-visible {
-  overflow: hidden; }
-  .mobile-menu-visible #nav .mobile-menu {
-    opacity: 1;
-    visibility: visible; }
-    .mobile-menu-visible #nav .mobile-menu .menu-backdrop {
-      opacity: 0.7;
-      visibility: visible;
-      -webkit-transition: all 0.7s ease;
-      -o-transition: all 0.7s ease;
-      transition: all 0.7s ease;
-      -webkit-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-      transform: translateX(0%); }
-    .mobile-menu-visible #nav .mobile-menu .close-btn {
-      -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-      transform: rotate(360deg); }
-    .mobile-menu-visible #nav .mobile-menu .menu-box {
-      opacity: 1;
-      visibility: visible;
-      -webkit-transition: all 0.7s ease;
-      -o-transition: all 0.7s ease;
-      transition: all 0.7s ease;
-      -webkit-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-      transform: translateX(0%); }
 
 #featured-courses {
   padding: 110px 0px;
@@ -4272,19 +4260,42 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #blog-details .blog-details__content__reply button {
     font-weight: 600; }
 
+#vision-area {
+  height: 100vh;
+  background-image: url("../img/slider_bg01.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center; }
+  #vision-area .vision-content:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -24px;
+    background-color: #fee823;
+    width: 0.4%;
+    height: 100%;
+    z-index: 6; }
+  #vision-area .vision-content h6 {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 18px;
+    font-style: italic; }
+  #vision-area .vision-content h2 {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    font-size: 80px;
+    line-height: 1.2;
+    margin-bottom: 40px; }
+    #vision-area .vision-content h2 span {
+      color: #fee823; }
+  #vision-area .vision-content a {
+    font-weight: 600; }
+
 #lessons {
   position: relative;
-  padding: 110px 0px; }
-  #lessons .section-left-name {
-    position: absolute;
-    left: -1%;
-    top: 37%;
-    font-size: 96px;
-    text-transform: uppercase;
-    color: #f8f7f7;
-    font-family: 'Oswald', sans-serif;
-    transform: rotate(-90deg);
-    z-index: -1; }
+  padding: 110px 0px;
+  background-color: #f8f7f7; }
   #lessons .lessons .lesson-item {
     position: relative;
     margin-bottom: 20px; }
@@ -4332,7 +4343,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       #lessons .lessons .lesson-item:hover .info a {
         opacity: 1; }
   #lessons .paths {
-    padding-top: 100px; }
+    padding-top: 100px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #7d7d7d;
+    font-style: normal; }
     #lessons .paths .text > span {
       font-size: 14px;
       text-transform: uppercase;
@@ -4343,7 +4359,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       color: #25cdc9; }
     #lessons .paths .text h3 {
       font-size: 36px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-family: "Oswald", sans-serif;
+      color: #1f1f1f; }
       #lessons .paths .text h3 span {
         color: #25cdc9; }
     #lessons .paths .progress-bars .item {
@@ -4369,6 +4387,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding: 110px 0px;
   position: relative; }
   #home-courses .title h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
     margin: 0 0 30px 0; }
     #home-courses .title h2 span {
       color: #25cdc9; }
@@ -4377,6 +4397,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     justify-content: center;
     align-items: center;
     margin: 0 0 75px 0; }
+    #home-courses .nav .nav-item.activee a {
+      color: #414141;
+      background-color: #fee823;
+      border: none;
+      line-height: 34px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 12px 20px;
+      margin: 0 7.5px 10px; }
     #home-courses .nav .nav-item a {
       border: none;
       line-height: 34px;
@@ -4388,7 +4418,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       background: transparent;
       color: #767474;
       border-radius: 30px;
-      transition: 0.3s linear; }
+      transition: 0.3s linear;
+      text-decoration: none; }
   #home-courses .tabb-content .tabb-pane .featured-courses-content {
     text-align: right;
     padding-right: 30px; }
@@ -4399,9 +4430,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       display: block;
       margin-bottom: 15px;
       line-height: 1;
-      color: #767474; }
-    #home-courses .tabb-content .tabb-pane .featured-courses-content h2 span {
-      color: #25cdc9; }
+      color: #767474;
+      font-weight: 500;
+      font-family: "Roboto", sans-serif; }
+    #home-courses .tabb-content .tabb-pane .featured-courses-content h2 {
+      font-size: 26px;
+      margin-bottom: 25px;
+      font-family: "Oswald", sans-serif; }
+      #home-courses .tabb-content .tabb-pane .featured-courses-content h2 span {
+        color: #25cdc9; }
     #home-courses .tabb-content .tabb-pane .featured-courses-content p {
       color: #7d7d7d; }
   #home-courses .about-triangle {
@@ -4449,6 +4486,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0.7;
     z-index: -1; }
   #home-categories .title h2 {
+    font-family: "Oswald", sans-serif;
     font-size: 37px;
     margin-bottom: 20px;
     margin-top: 0px;
@@ -4464,6 +4502,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     color: #e0e0e0; }
 
 #isotope {
+  position: relative;
   padding: 70px 0 110px; }
   #isotope .isotope-menu {
     display: flex;
@@ -4550,8 +4589,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         #isotope .courses .item .info .category a {
           font-style: italic;
           color: #25cdc9; }
-      #isotope .courses .item .info h4 {
+      #isotope .courses .item .info h5 a {
         font-size: 18px;
+        font-family: "Oswald", sans-serif;
+        color: #414141;
         line-height: 1.5;
         margin-bottom: 0; }
       #isotope .courses .item .info .rating ul {
@@ -4563,12 +4604,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       #isotope .courses .item .info .rating__info {
         display: flex; }
         #isotope .courses .item .info .rating__info__star {
-          margin: 0 15px 0 0; }
+          margin: 0 15px 0 0;
+          display: flex;
+          padding: 7px 0 0 0; }
           #isotope .courses .item .info .rating__info__star i {
             color: #fee823;
             font-size: 12px; }
       #isotope .courses .item .info .rating__level i {
-        color: #4eabee; }
+        color: #25cdc9; }
+      #isotope .courses .item .info .rating__level span {
+        font-family: "Oswald", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #767474; }
       #isotope .courses .item .info .bottom {
         display: flex;
         align-items: center;
@@ -4623,7 +4671,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       line-height: 1;
       margin-bottom: 15px; }
     #home-category .category-item a span {
-      color: #1f1f1f;
+      color: #414141;
       display: block;
       font-size: 16px;
       line-height: 1.6;
@@ -4647,7 +4695,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     position: relative;
     padding: 0 0 25px 0;
     margin: 0 0 70px 0;
-    color: #e0e0e0; }
+    color: #fff; }
     #article .article-title::before {
       content: "";
       position: absolute;
@@ -4659,7 +4707,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       margin: 0 auto;
       background-color: #e0e0e0; }
     #article .article-title h2 {
-      margin: 0 0 20px 0; }
+      margin: 0 0 20px 0;
+      font-family: "Oswald", sans-serif;
+      font-size: 36px; }
+    #article .article-title p {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px; }
   #article .article-post__item {
     background: #fff;
     box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); }
@@ -4708,9 +4761,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             color: #7d7d7d; }
       #article .article-post__item__content h4 {
         margin: 0 0 14px 0; }
+        #article .article-post__item__content h4:hover a {
+          color: #25cdc9; }
         #article .article-post__item__content h4 a {
           font-size: 18px;
-          color: #1f1f1f; }
+          color: #1f1f1f;
+          transition: all 0.6s ease-in-out;
+          text-decoration: none;
+          font-family: "Oswald", sans-serif; }
       #article .article-post__item__content p {
         font-size: 14px;
         color: #7d7d7d; }
@@ -4749,21 +4807,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   position: relative;
   z-index: 1; }
   #home-newsletter .title {
-    color: #e8e8e8; }
+    color: #fff; }
     #home-newsletter .title span {
       font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 2px;
       display: block;
       margin-bottom: 15px;
-      line-height: 1; }
+      line-height: 1;
+      font-family: "Roboto", sans-serif; }
     #home-newsletter .title h2 {
       font-size: 36px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-family: "Oswald", sans-serif; }
     #home-newsletter .title p {
       font-size: 14px;
       font-weight: 500;
-      line-height: 28px; }
+      line-height: 28px;
+      font-family: "Roboto", sans-serif; }
   #home-newsletter .newsletter-form {
     background-image: url("../img/newsletter_shape.png");
     margin-left: 40px;
@@ -4802,7 +4863,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         display: inline-block;
         font-size: 14px;
         font-weight: 600;
-        letter-spacing: 0; }
+        letter-spacing: 0;
+        font-family: "Oswald", sans-serif; }
         #home-newsletter .newsletter-form form button i {
           margin: 0 3px 0 0; }
   #home-newsletter .newsletter-bell {
@@ -4812,43 +4874,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     right: 8%;
     z-index: -1; }
 
-#vision-area {
-  height: 100vh;
-  background-image: url("../img/slider_bg01.jpg");
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center; }
-  #vision-area .vision-content:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -24px;
-    background-color: #fee823;
-    width: 0.4%;
-    height: 100%;
-    z-index: 6; }
-  #vision-area .vision-content h6 {
-    color: #e3e3e3; }
-  #vision-area .vision-content h2 {
-    color: #e3e3e3;
-    font-size: 73px;
-    line-height: 1.2;
-    margin-bottom: 40px; }
-    #vision-area .vision-content h2 span {
-      color: #fee823; }
-
 @media (max-width: 991.98px) {
-  header .header-top {
+  header {
     display: none; }
-  header .nav-first {
-    top: 0; }
-    header .nav-first .navbar .navbar-collapse {
+    header .header-top {
       display: none; }
-    header .nav-first .header-actions {
-      display: none; }
-    header .nav-first .mobile-nav-toggler {
-      display: block; }
+    header .nav-first {
+      top: 0; }
+      header .nav-first .navbar .navbar-collapse {
+        display: none; }
+      header .nav-first .header-actions {
+        display: none; }
   footer #footer .about,
   footer #footer .quick-links,
   footer #footer .popular-courses,
