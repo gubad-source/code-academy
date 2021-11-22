@@ -2386,8 +2386,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       font-size: 60px;
       color: #fff;
       margin-bottom: 0;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: "Oswald", sans-serif; }
     .breadcrumb-intro .title nav ol, .breadcrumb .title nav ol {
+      margin: 15px 0 0 0;
+      font-family: "Roboto", sans-serif;
       list-style: none;
       display: flex; }
       .breadcrumb-intro .title nav ol a, .breadcrumb .title nav ol a {
@@ -2592,6 +2595,163 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .section-left-name.iso {
     left: -6%;
     top: 49%; }
+
+.home-courses {
+  padding: 110px 0px;
+  position: relative; }
+  .home-courses .title h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    margin: 0 0 30px 0; }
+    .home-courses .title h2 span {
+      color: #25cdc9; }
+  .home-courses .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 75px 0; }
+    .home-courses .nav .nav-item.activee a {
+      color: #414141;
+      background-color: #fee823;
+      border: none;
+      line-height: 34px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 12px 20px;
+      margin: 0 7.5px 10px; }
+    .home-courses .nav .nav-item a {
+      border: none;
+      line-height: 34px;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0 20px;
+      margin: 0 7.5px 10px;
+      background: transparent;
+      color: #767474;
+      border-radius: 30px;
+      transition: 0.3s linear;
+      text-decoration: none; }
+  .home-courses .tabb-content .tabb-pane .featured-courses-content {
+    text-align: right;
+    padding-right: 30px; }
+    .home-courses .tabb-content .tabb-pane .featured-courses-content .ingredients-span {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      margin-bottom: 15px;
+      line-height: 1;
+      color: #767474;
+      font-weight: 500;
+      font-family: "Roboto", sans-serif; }
+    .home-courses .tabb-content .tabb-pane .featured-courses-content h2 {
+      font-size: 26px;
+      margin-bottom: 25px;
+      font-family: "Oswald", sans-serif; }
+      .home-courses .tabb-content .tabb-pane .featured-courses-content h2 span {
+        color: #25cdc9; }
+    .home-courses .tabb-content .tabb-pane .featured-courses-content p {
+      color: #7d7d7d; }
+  .home-courses .about-triangle {
+    position: absolute;
+    left: 7%;
+    top: 0;
+    z-index: -1; }
+  .home-courses .about-circle {
+    position: absolute;
+    right: 6%;
+    top: 24%;
+    z-index: -1; }
+  .home-courses .about-math {
+    background-image: url("../img/featured_courses_shape.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 366px;
+    margin: 0 auto;
+    z-index: -1; }
+
+.newsletter {
+  padding: 120px 0px;
+  background-image: url("../img/newsletter_bg.jpg");
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  z-index: 1; }
+  .newsletter .title {
+    color: #fff; }
+    .newsletter .title span {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      margin-bottom: 15px;
+      line-height: 1;
+      font-family: "Roboto", sans-serif; }
+    .newsletter .title h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-family: "Oswald", sans-serif; }
+    .newsletter .title p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 28px;
+      font-family: "Roboto", sans-serif; }
+  .newsletter .newsletter-form {
+    background-image: url("../img/newsletter_shape.png");
+    margin-left: 40px;
+    background-size: cover;
+    background-position: left center;
+    padding: 35px 30px 45px 65px; }
+    .newsletter .newsletter-form label {
+      display: inline-block;
+      color: #414141;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 20px; }
+    .newsletter .newsletter-form form {
+      display: flex;
+      align-items: center; }
+      .newsletter .newsletter-form form input {
+        border: none;
+        background: #fff;
+        color: #666666;
+        font-weight: 500;
+        padding: 14px 20px;
+        flex-grow: 1;
+        font-size: 14px; }
+      .newsletter .newsletter-form form button {
+        text-transform: uppercase;
+        border: none;
+        padding: 0 20px;
+        background: #25cdc9;
+        color: #fff;
+        line-height: 49px;
+        width: 150px;
+        margin-left: 8px;
+        border: medium none;
+        border-radius: 0;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0;
+        font-family: "Oswald", sans-serif; }
+        .newsletter .newsletter-form form button i {
+          margin: 0 3px 0 0; }
+  .newsletter .newsletter-bell {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8%;
+    z-index: -1; }
 
 .back-to-top {
   position: fixed;
@@ -3151,69 +3311,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .nav-first.sticky-menu .mobile-nav-toggler {
       color: #1f1f1f; }
 
-#featured-courses {
-  padding: 110px 0px;
-  position: relative; }
-  #featured-courses .title h2 {
-    margin: 0 0 30px 0; }
-    #featured-courses .title h2 span {
-      color: #25cdc9; }
-  #featured-courses .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 75px 0; }
-    #featured-courses .nav .nav-item a {
-      border: none;
-      line-height: 34px;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding: 0 20px;
-      margin: 0 7.5px 10px;
-      background: transparent;
-      color: #767474;
-      border-radius: 30px;
-      transition: 0.3s linear; }
-  #featured-courses .tabb-content .tabb-pane .featured-courses-content {
-    text-align: right;
-    padding-right: 30px; }
-    #featured-courses .tabb-content .tabb-pane .featured-courses-content .ingredients-span {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      display: block;
-      margin-bottom: 15px;
-      line-height: 1;
-      color: #767474; }
-    #featured-courses .tabb-content .tabb-pane .featured-courses-content h2 span {
-      color: #25cdc9; }
-    #featured-courses .tabb-content .tabb-pane .featured-courses-content p {
-      color: #7d7d7d; }
-  #featured-courses .about-triangle {
-    position: absolute;
-    left: 7%;
-    top: 0;
-    z-index: -1; }
-  #featured-courses .about-circle {
-    position: absolute;
-    right: 6%;
-    top: 24%;
-    z-index: -1; }
-  #featured-courses .about-math {
-    background-image: url("../img/featured_courses_shape.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 366px;
-    margin: 0 auto;
-    z-index: -1; }
-
 #about-categories {
   background-image: url("../img/cta_bg.jpg");
   padding-top: 110px;
@@ -3359,7 +3456,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     right: 0px; }
   #team-vision .team-box .team-thumb {
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: 15px; }
     #team-vision .team-box .team-thumb::before {
       content: "";
       position: absolute;
@@ -3400,8 +3498,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     #team-vision .team-box .team-content h4 {
       margin: 0px; }
       #team-vision .team-box .team-content h4 a {
+        font-family: "Oswald", sans-serif;
+        font-size: 20px;
         color: #1f1f1f;
         text-decoration: none; }
+    #team-vision .team-box .team-content span {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      color: #7d7d7d; }
 
 #about-newsletter {
   padding: 120px 0px;
@@ -4383,88 +4487,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         #lessons .paths .progress-bars .item .progress .bg-dark {
           background-color: #060606 !important; }
 
-#home-courses {
-  padding: 110px 0px;
-  position: relative; }
-  #home-courses .title h2 {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    margin: 0 0 30px 0; }
-    #home-courses .title h2 span {
-      color: #25cdc9; }
-  #home-courses .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 0 75px 0; }
-    #home-courses .nav .nav-item.activee a {
-      color: #414141;
-      background-color: #fee823;
-      border: none;
-      line-height: 34px;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding: 12px 20px;
-      margin: 0 7.5px 10px; }
-    #home-courses .nav .nav-item a {
-      border: none;
-      line-height: 34px;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      padding: 0 20px;
-      margin: 0 7.5px 10px;
-      background: transparent;
-      color: #767474;
-      border-radius: 30px;
-      transition: 0.3s linear;
-      text-decoration: none; }
-  #home-courses .tabb-content .tabb-pane .featured-courses-content {
-    text-align: right;
-    padding-right: 30px; }
-    #home-courses .tabb-content .tabb-pane .featured-courses-content .ingredients-span {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      display: block;
-      margin-bottom: 15px;
-      line-height: 1;
-      color: #767474;
-      font-weight: 500;
-      font-family: "Roboto", sans-serif; }
-    #home-courses .tabb-content .tabb-pane .featured-courses-content h2 {
-      font-size: 26px;
-      margin-bottom: 25px;
-      font-family: "Oswald", sans-serif; }
-      #home-courses .tabb-content .tabb-pane .featured-courses-content h2 span {
-        color: #25cdc9; }
-    #home-courses .tabb-content .tabb-pane .featured-courses-content p {
-      color: #7d7d7d; }
-  #home-courses .about-triangle {
-    position: absolute;
-    left: 7%;
-    top: 0;
-    z-index: -1; }
-  #home-courses .about-circle {
-    position: absolute;
-    right: 6%;
-    top: 24%;
-    z-index: -1; }
-  #home-courses .about-math {
-    background-image: url("../img/featured_courses_shape.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 366px;
-    margin: 0 auto;
-    z-index: -1; }
-
 #home-categories {
   background-image: url("../img/cta_bg.jpg");
   padding-top: 110px;
@@ -4798,81 +4820,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           margin-left: 50px; }
           #article .article-post__item__content a:hover span::before {
             width: 42px; }
-
-#home-newsletter {
-  padding: 120px 0px;
-  background-image: url("../img/newsletter_bg.jpg");
-  background-position: top center;
-  background-size: cover;
-  position: relative;
-  z-index: 1; }
-  #home-newsletter .title {
-    color: #fff; }
-    #home-newsletter .title span {
-      font-size: 14px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      display: block;
-      margin-bottom: 15px;
-      line-height: 1;
-      font-family: "Roboto", sans-serif; }
-    #home-newsletter .title h2 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      font-family: "Oswald", sans-serif; }
-    #home-newsletter .title p {
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 28px;
-      font-family: "Roboto", sans-serif; }
-  #home-newsletter .newsletter-form {
-    background-image: url("../img/newsletter_shape.png");
-    margin-left: 40px;
-    background-size: cover;
-    background-position: left center;
-    padding: 35px 30px 45px 65px; }
-    #home-newsletter .newsletter-form label {
-      display: inline-block;
-      color: #414141;
-      font-weight: 700;
-      text-transform: uppercase;
-      line-height: 1;
-      margin-bottom: 20px; }
-    #home-newsletter .newsletter-form form {
-      display: flex;
-      align-items: center; }
-      #home-newsletter .newsletter-form form input {
-        border: none;
-        background: #fff;
-        color: #666666;
-        font-weight: 500;
-        padding: 14px 20px;
-        flex-grow: 1;
-        font-size: 14px; }
-      #home-newsletter .newsletter-form form button {
-        text-transform: uppercase;
-        border: none;
-        padding: 0 20px;
-        background: #25cdc9;
-        color: #fff;
-        line-height: 49px;
-        width: 150px;
-        margin-left: 8px;
-        border: medium none;
-        border-radius: 0;
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 600;
-        letter-spacing: 0;
-        font-family: "Oswald", sans-serif; }
-        #home-newsletter .newsletter-form form button i {
-          margin: 0 3px 0 0; }
-  #home-newsletter .newsletter-bell {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 8%;
-    z-index: -1; }
 
 @media (max-width: 991.98px) {
   header {

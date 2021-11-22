@@ -15,9 +15,12 @@
         color: #fff;
         margin-bottom: 0;
         text-transform: uppercase;
+        font-family: $primary_font_family;
       }
       nav {
         ol {
+          margin: 15px 0 0 0;
+          font-family: $secondary_font_family;
           list-style: none;
           display: flex;
   
