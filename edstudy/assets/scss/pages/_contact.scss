@@ -1,34 +1,16 @@
 #contact {
   padding: 110px 0px;
-  .contact-title{
-    padding: 0 0 25px 0;
-    margin: 0 0 70px 0;
-    position: relative;
-    &::before{
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 50px;
-      height: 2.5px;
-      margin: 0 auto;
-      background: $twitter-color
-    }
-    h2{
-      margin: 0 0 20px 0;
-      span{
-        color: $secondary-color;
-      }
-    }
-  }
+  
   .contact-info{
+    font-family: $primary_font_family;
     .contact-box{
       display: flex;
     align-items: flex-start;
       margin-bottom: 50px;
       position: relative;
-      padding: 0 0 0 40px;
+   &:first-child{
+     padding-left: 25px;
+   }
       &::after{
         content: "";
     position: absolute;
@@ -90,6 +72,7 @@
         height: 155px;
       }
       i{
+        margin:4px 0 0 0 ;
         position: absolute;
         top: 18px;
         left: 20px;

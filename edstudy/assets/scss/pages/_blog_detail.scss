@@ -1,17 +1,22 @@
 #blog-details {
   padding: 120px 0px;
+  background-color: $gray-color;
   .blog-details {
+    background-color: #fff;
     &__thumb {
       img {
         width: 100%;
       }
     }
     &__content {
+      border: 1px solid #f4f4f4;
+      padding: 35px 35px 25px;
       h4 {
-        margin: 0 0 20px 0;
+        margin: 0 0 30px 0;
+        font-family: $primary_font_family;
       }
       &__meta {
-        margin: 0 10px 0 0;
+        margin: 0 0 15px 0;
         ul {
           margin: 0;
           padding: 0;
@@ -19,6 +24,7 @@
           display: flex;
           align-items: center;
           flex-wrap: wrap;
+          color: $gray-color;
           li {
             font-size: 12px;
             text-transform: uppercase;
@@ -30,11 +36,29 @@
             padding-right: 15px;
             margin-right: 15px;
             display: block;
+            &:not(:last-child):before {
+              content: "|";
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              color: #979797;
+            }
+            a {
+              color: $body-color;
+            }
             i {
               margin: 0 8px 0 0;
             }
           }
         }
+      }
+      p {
+        margin-bottom: 20px;
+        line-height: 28px;
+        color: $body-color;
+        font-weight: 500;
+        font-family: $secondary_font_family;
       }
       blockquote {
         margin: 30px 0;
@@ -56,6 +80,18 @@
           height: 70px;
           background-repeat: no-repeat;
           z-index: -1;
+        }
+      }
+      h5{
+        font-family: $primary_font_family;
+        margin: 20px 0px;
+      }
+      &__list{
+        padding: 17px;
+        li{
+          margin: 0 0 6px 0;
+    color:$body-color;
+    font-family: 'Roboto';
         }
       }
       &__social {
@@ -91,6 +127,7 @@
           }
           a {
             color: $black-color;
+            font-weight: 600;
           }
         }
         &__share a {
@@ -136,7 +173,6 @@
         ul {
           list-style: none;
           padding: 0;
-
           li {
             display: flex;
             padding-bottom: 30px;
@@ -177,6 +213,8 @@
           height: 170px;
           color: $body-color;
           transition: 0.3s;
+          resize: none;
+          outline: none;
         }
         input {
           width: 100%;
@@ -186,8 +224,9 @@
           background: $white-secondary-color;
           color: $body-color;
           transition: 0.3s;
+          outline: none;
         }
-        button{
+        button {
           font-weight: 600;
         }
       }
