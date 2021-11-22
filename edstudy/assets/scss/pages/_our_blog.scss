@@ -1,6 +1,10 @@
 #our-blog {
+  padding-top: 100px;
+  background-color: $gray-color;
+  font-family: $primary_font_family;
   .blog-post {
     margin-bottom: 50px;
+   background-color: #fff;
     .blog-thumb {
       img {
         width: 100%;
@@ -15,8 +19,14 @@
           display: flex;
           text-transform: uppercase;
           padding: 0px;
+          font-family: $secondary_font_family;
+          font-size: 14px;
+          font-weight: bolder;
           li {
-            color: $twitter-color;
+            color: $secondary-color;
+            a{
+              color: $secondary-color;
+            }
           }
           li:nth-child(1) {
             margin: 0 7px 0 0;
@@ -38,6 +48,7 @@
         font-weight: 500;
         line-height: 28px;
         color: $body-color;
+        font-family: $secondary_font_family;
       }
       .blog-meta {
         ul {
@@ -70,8 +81,12 @@
           li {
             list-style: none;
             .fa-clock {
-              color: $twitter-color;
+              color: $secondary-color;
             }
+          }
+          li:first-child{
+            font-family: $secondary_font_family;
+            color: $body-color;
           }
           li:nth-child(2) {
             a {
@@ -80,6 +95,7 @@
               letter-spacing: 2px;
               color: #3c3444;
               font-weight: 500;
+              font-family: $secondary_font_family;
             }
           }
           .post-share a {
@@ -105,4 +121,7 @@
     }
   }
  
+}
+.breadcrumb{
+  margin-bottom: 0px;
 }

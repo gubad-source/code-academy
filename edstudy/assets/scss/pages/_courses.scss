@@ -9,7 +9,7 @@
       margin-bottom: 50px;
       border-radius: 6px;
       background: #fff;
-      box-shadow: $shadow;
+      box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13);
       .photo {
         position: relative;
         img {
@@ -27,7 +27,7 @@
           font-weight: 500;
           text-transform: uppercase;
           font-family: $primary_font_family;
-          color: #414141;
+          color: $title-color;
 
           &::after {
             content: "";
@@ -49,17 +49,22 @@
         .category {
           font-size: 14px;
           font-weight: 500;
-          color: #7d7d7d;
+          color: $body-color;
           a {
             font-style: italic;
             color: $secondary-color;
           }
         }
 
-        h4 {
-          font-size: 18px;
-          line-height: 1.5;
-          margin-bottom: 0;
+        h5 {
+        
+          a{
+            font-size: 18px;
+            font-family: $primary_font_family;
+            color: $title-color;
+            line-height: 1.5;
+            margin-bottom: 0;
+          }
         }
 
         .rating {
@@ -74,9 +79,12 @@
             display: flex;
             &__star {
               margin: 0 15px 0 0;
+              display: flex;
+                padding:  7px 0 0 0;
               i {
                 color: $primary-color;
                 font-size: 12px;
+                
               }
             }
             &__point {
@@ -84,7 +92,13 @@
           }
           &__level {
             i {
-              color: $twitter-color;
+              color: $secondary-color;
+            }
+            span{
+              font-family: $primary_font_family;
+              font-weight: 500;
+              font-size: 14px;
+              color:$gray-secondary;
             }
           }
         }
@@ -96,15 +110,15 @@
           padding-top: 20px;
           border-top: 1px solid #e1e1e1;
           .author {
-            color: #414141;
+            color: $title-color;
             a {
               font-style: italic;
-              color: #7d7d7d;
+              color: $body-color;
             }
           }
           .price {
             font-size: 16px;
-            color: #414141;
+            color: $title-color;
             font-family: $primary_font_family;
             line-height: 1;
           }

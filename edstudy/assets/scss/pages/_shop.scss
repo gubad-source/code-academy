@@ -1,5 +1,6 @@
 #shop-area {
   padding: 120px 0px;
+  font-family: $primary_font_family;
   .shop-action{
     display: flex;
     justify-content: space-between;
@@ -116,6 +117,8 @@ span{
         display: block;
       }
       .product-rating{
+        display: flex;
+        padding: 10px 0 0 0;
         i{
           font-size: 10px;
     color: lighten($color:  $body-color, $amount: 1);
@@ -124,6 +127,7 @@ span{
     }
   }
   .shop-sidebar {
+    font-family: $primary_font_family;
     .widget {
       margin: 0 0 40px 0;
       form {
@@ -131,7 +135,7 @@ span{
         input {
           width: 100%;
           border: 1px solid $body-reverse-color;
-          padding: 14px 20px;
+          padding: 9px 20px;
           font-weight: 500;
           background: $white-sidebar-color;
           color: $body-color;

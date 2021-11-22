@@ -1,5 +1,10 @@
 .blog-sidebar {
+  font-family: $primary-font-family;
+ 
     .widget {
+      &:first-child{
+        border-top: 3px solid $secondary-color;
+      }
       margin: 0 0 25px 0;
       background: #fff;
       border: 1px solid lighten($color: $white-secondary-color, $amount: 0);
