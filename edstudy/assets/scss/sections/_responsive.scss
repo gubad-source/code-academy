@@ -1,77 +1,208 @@
 @media (max-width: 991.98px) {
-    header {
+  header {
+    .header-top {
       display: none;
-        .header-top {
+    }
+    .nav-first {
+      top: 0;
+      .navbar {
+        .navbar-collapse {
           display: none;
         }
-       .nav-first {
-          top: 0;
-          .navbar {
-            .navbar-collapse {
-              display: none;
-            }
-          }
-          .header-actions {
-            display: none;
-          }
-    
-         
+      }
+      .header-actions {
+        display: none;
+      }
+    }
+  }
+
+  footer {
+    #footer {
+      .about,
+      .quick-links,
+      .popular-courses,
+      .twitter-feed {
+        margin-bottom: 50px;
+      }
+    }
+
+    #copyright {
+      .text {
+        text-align: center;
+        p {
+          margin-bottom: 10px;
         }
       }
-    
-      footer {
-        #footer {
-          .about,
-          .quick-links,
-          .popular-courses,
-          .twitter-feed {
-            margin-bottom: 50px;
-          }
+      .photo {
+        text-align: center;
+      }
+    }
+  }
+  .breadcrumb-intro{
+    .title {
+      h2 {
+        font-size: 35px;
+        text-align: center;
+      }
+    }
+  }
+  .breadcrumb {
+    .title {
+      h2 {
+        font-size: 35px;
+        text-align: center;
+      }
+    }
+  }
+  .pagination-wrap {
+    .pagination {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .page-search{
+    form{
+      display: flex;
+    flex-direction: column;
+    .page-search__box__input{
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+    select{
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+    button{
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+    }
+  }
+  .courses-search {
+    &__box {
+      form {
+        display: block;
+      }
+      &__input {
+        width: 100%;
+        margin: 0 0 10px 0;
+        i {
+          display: none;
         }
-    
-        #copyright {
-          .text {
-            text-align: center;
-            p {
-              margin-bottom: 10px;
+        input {
+          padding-left: 15px;
+        }
+      }
+      &__select {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+      button {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+
+  #contact {
+    .contact-info {
+      flex-direction: column;
+      .contact-box {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+  #our-blog {
+    .blog-post {
+      .blog-content {
+        .blog-meta {
+          ul {
+            flex-direction: column;
+            align-items: flex-start;
+            li {
+              &:nth-child(2) {
+                padding: 10px 0px;
+              }
             }
-          }
-          .photo {
-            text-align: center;
           }
         }
       }
-    #breadcrumb{
-        .title{
-            h2{
-                font-size: 25px;
-                text-align: center;
-            }
-        }
     }
-    .courses-search{
-        &__box{
-            form{
-                display: block;
-            }
-            &__input{
-                width: 100%;
-                margin: 0 0 10px 0;
-             i{
-                 display: none;
-             }
-             input{
-              padding-left: 15px;
-             }
-            }
-            &__select{
-                width: 100%;
-                margin: 0 0 10px 0;
-            }
-            button{
-                width: 100%;
-                margin: 0 0 10px 0;
-            }
+  }
+  #blog-details {
+    .blog-details__content__social {
+      ul {
+        display: flex;
+        flex-direction: column;
+        li:first-child() {
+          font-size: 14px;
+          padding-bottom: 10px;
         }
+      }
     }
+    .blog-details__content__avatar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .blog-details__content__comment {
+      display: flex;
+      flex-direction: column;
+      ul {
+        li {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .blog-details__content__comment__text__info {
+        h5 {
+          font-size: 14px;
+          display: flex;
+          flex-direction: column;
+        }
+        a {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    aside {
+      margin-top: 66px;
+    }
+  }
+  #shop-area {
+    .shop-action {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__result {
+        padding-bottom: 15px;
+      }
+      &__form {
+        width: 100%;
+        select {
+          width: 100%;
+        }
+      }
+    }
+    .shop-item{
+      .product-content{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+    }
+  }
+  #courses{
+    .rating{
+      ul{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 }

@@ -3677,6 +3677,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       border: 1px dotted #a7a7a7;
       border-radius: 0;
       box-shadow: none;
+      outline: none;
       -webkit-appearance: none; }
   #shop-area .shop-item {
     margin: 0 0 50px 0; }
@@ -4102,7 +4103,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #courses {
   position: relative;
-  padding: 110px 0px; }
+  padding: 110px 0px;
+  background-color: #f8f7f7; }
   #courses .courses {
     margin-top: 50px; }
     #courses .courses .item {
@@ -4113,7 +4115,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       #courses .courses .item .photo {
         position: relative; }
         #courses .courses .item .photo img {
-          max-width: 100%;
+          width: 100%;
           border-radius: 6px 6px 0 0; }
         #courses .courses .item .photo .label {
           position: absolute;
@@ -4197,62 +4199,51 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-position: center;
   background-size: cover;
   padding: 110px 0px; }
-  #courses-category .category-title {
-    margin: 0 0 70px 0;
-    padding: 0 0 15px 0;
-    position: relative; }
-    #courses-category .category-title::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 50px;
-      height: 2.5px;
-      margin: 0 auto;
-      background-color: #4eabee; }
-    #courses-category .category-title h2 {
-      font-size: 36px;
-      margin: 0 0 20px 0; }
-      #courses-category .category-title h2 span {
-        color: #4eabee; }
-  #courses-category .category-item a {
-    transition: all 0.6s ease;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: #fff;
-    padding: 34px 20px;
-    position: relative;
-    transform: translateY(0);
-    margin: 0 10px 20px;
-    z-index: 1; }
-    #courses-category .category-item a::before {
-      content: "";
-      position: absolute;
-      left: 10px;
-      top: 10px;
-      right: 10px;
-      bottom: 10px;
-      border: 1px dotted #e7e7e7;
-      z-index: -1;
-      box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13); }
-    #courses-category .category-item a:hover {
-      transform: translateY(-7px); }
-    #courses-category .category-item a i {
-      color: #4eabee;
-      display: block;
-      font-size: 60px;
-      line-height: 1;
-      margin-bottom: 15px; }
-    #courses-category .category-item a span {
-      color: #1f1f1f;
-      display: block;
-      font-size: 16px;
-      line-height: 1.6;
-      font-weight: 500; }
+  #courses-category .category-item {
+    font-family: "Oswald", sans-serif; }
+    #courses-category .category-item a {
+      transition: all 0.6s ease;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: #fff;
+      padding: 34px 20px;
+      position: relative;
+      transform: translateY(0);
+      margin: 0 10px 20px;
+      z-index: 1; }
+      #courses-category .category-item a::before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        border: 1px dotted #e7e7e7;
+        z-index: -1;
+        box-shadow: 0px 2px 12.09px 0.91px rgba(167, 162, 184, 0.13); }
+      #courses-category .category-item a:hover {
+        transform: translateY(-7px); }
+      #courses-category .category-item a i {
+        color: #4eabee;
+        display: block;
+        font-size: 60px;
+        line-height: 1;
+        margin-bottom: 15px; }
+      #courses-category .category-item a span {
+        color: #1f1f1f;
+        display: block;
+        font-size: 16px;
+        line-height: 1.6;
+        font-weight: 500; }
+
+.page-search {
+  background-color: #f8f7f7; }
+
+.pagination-wrap {
+  margin-bottom: 0px; }
 
 #blog-details {
   padding: 120px 0px;
@@ -4264,6 +4255,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     #blog-details .blog-details__content {
       border: 1px solid #f4f4f4;
       padding: 35px 35px 25px; }
+      #blog-details .blog-details__content__images img {
+        width: 100%; }
       #blog-details .blog-details__content h4 {
         margin: 0 0 30px 0;
         font-family: "Oswald", sans-serif; }
@@ -4894,16 +4887,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             width: 42px; }
 
 @media (max-width: 991.98px) {
-  header {
+  header .header-top {
     display: none; }
-    header .header-top {
+  header .nav-first {
+    top: 0; }
+    header .nav-first .navbar .navbar-collapse {
       display: none; }
-    header .nav-first {
-      top: 0; }
-      header .nav-first .navbar .navbar-collapse {
-        display: none; }
-      header .nav-first .header-actions {
-        display: none; }
+    header .nav-first .header-actions {
+      display: none; }
   footer #footer .about,
   footer #footer .quick-links,
   footer #footer .popular-courses,
@@ -4915,9 +4906,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       margin-bottom: 10px; }
   footer #copyright .photo {
     text-align: center; }
-  #breadcrumb .title h2 {
-    font-size: 25px;
+  .breadcrumb-intro .title h2 {
+    font-size: 35px;
     text-align: center; }
+  .breadcrumb .title h2 {
+    font-size: 35px;
+    text-align: center; }
+  .pagination-wrap .pagination {
+    display: flex;
+    flex-wrap: wrap; }
+  .page-search form {
+    display: flex;
+    flex-direction: column; }
+    .page-search form .page-search__box__input {
+      width: 100%;
+      margin: 0 0 10px 0; }
+    .page-search form select {
+      width: 100%;
+      margin: 0 0 10px 0; }
+    .page-search form button {
+      width: 100%;
+      margin: 0 0 10px 0; }
   .courses-search__box form {
     display: block; }
   .courses-search__box__input {
@@ -4932,4 +4941,58 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin: 0 0 10px 0; }
   .courses-search__box button {
     width: 100%;
-    margin: 0 0 10px 0; } }
+    margin: 0 0 10px 0; }
+  #contact .contact-info {
+    flex-direction: column; }
+    #contact .contact-info .contact-box {
+      display: block;
+      text-align: center; }
+  #our-blog .blog-post .blog-content .blog-meta ul {
+    flex-direction: column;
+    align-items: flex-start; }
+    #our-blog .blog-post .blog-content .blog-meta ul li:nth-child(2) {
+      padding: 10px 0px; }
+  #blog-details .blog-details__content__social ul {
+    display: flex;
+    flex-direction: column; }
+    #blog-details .blog-details__content__social ul li:first-child() {
+      font-size: 14px;
+      padding-bottom: 10px; }
+  #blog-details .blog-details__content__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  #blog-details .blog-details__content__comment {
+    display: flex;
+    flex-direction: column; }
+    #blog-details .blog-details__content__comment ul li {
+      display: flex;
+      flex-direction: column; }
+    #blog-details .blog-details__content__comment .blog-details__content__comment__text__info h5 {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column; }
+    #blog-details .blog-details__content__comment .blog-details__content__comment__text__info a {
+      display: flex;
+      align-items: center; }
+  #blog-details aside {
+    margin-top: 66px; }
+  #shop-area .shop-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #shop-area .shop-action__result {
+      padding-bottom: 15px; }
+    #shop-area .shop-action__form {
+      width: 100%; }
+      #shop-area .shop-action__form select {
+        width: 100%; }
+  #shop-area .shop-item .product-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #courses .rating ul {
+    display: flex;
+    flex-direction: column; } }

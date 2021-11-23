@@ -2,7 +2,7 @@
 #courses {
   position: relative;
   padding: 110px 0px;
-
+background-color: $gray-color;
   .courses {
     margin-top: 50px;
     .item {
@@ -13,7 +13,8 @@
       .photo {
         position: relative;
         img {
-          max-width: 100%;
+          width: 100%;
+         
           border-radius: 6px 6px 0 0;
         }
         .label {
@@ -132,33 +133,10 @@
   background-position: center;
   background-size: cover;
   padding: 110px 0px;
-  .category-title {
-    margin: 0 0 70px 0;
-    padding: 0 0 15px 0;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 50px;
-      height: 2.5px;
-      margin: 0 auto;
-      background-color: $twitter-color;
-    }
-    h2 {
-      font-size: 36px;
-      margin: 0 0 20px 0;
-      span {
-        color: $twitter-color;
-      }
-    }
-    p {
-    }
-  }
+
+  
   .category-item {
-   
+   font-family: $primary_font_family;
     a {
       transition: all 0.6s ease;
       
@@ -203,4 +181,10 @@
       }
     }
   }
+}
+.page-search{
+  background-color: $gray-color;
+}
+.pagination-wrap{
+  margin-bottom: 0px;
 }

@@ -42,6 +42,7 @@ span{
     border: 1px dotted rgb(167, 167, 167);
     border-radius: 0;
     box-shadow: none;
+    outline: none;
     -webkit-appearance: none;
       option{
 
@@ -132,6 +133,7 @@ span{
       margin: 0 0 40px 0;
       form {
         position: relative;
+  
         input {
           width: 100%;
           border: 1px solid $body-reverse-color;
