@@ -4927,6 +4927,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .page-search form button {
       width: 100%;
       margin: 0 0 10px 0; }
+  .newsletter .title {
+    text-align: center; }
+  .newsletter .newsletter-form {
+    background: none;
+    background-color: #fee823; }
+    .newsletter .newsletter-form form {
+      display: block; }
+      .newsletter .newsletter-form form input {
+        width: 100%; }
+      .newsletter .newsletter-form form button {
+        width: 100%;
+        margin: 0;
+        margin-top: 10px; }
   .courses-search__box form {
     display: block; }
   .courses-search__box__input {
@@ -4995,4 +5008,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     align-items: center; }
   #courses .rating ul {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  #event-courses .event-bottom-wrap {
+    display: flex;
+    flex-direction: column; }
+  #event-courses .event-meta {
+    display: flex; } }
