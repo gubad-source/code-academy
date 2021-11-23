@@ -383,6 +383,19 @@ background-color: $gray-color;
     }
   }
 }
+#lessons{
+  .lesson-item{
+    img{
+      width: 100%;
+    }
+  }
+  .text{
+    p{
+      margin-bottom: 36px;
+    }
+  }
+}
+
 #home-category {
   background-image: url("../img/category_bg.jpg");
   background-position: center;

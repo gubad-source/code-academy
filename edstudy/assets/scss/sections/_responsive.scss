@@ -85,6 +85,7 @@
     .newsletter-form{
       background: none;
     background-color:$primary-color;
+    margin: 0px;
     form{
       display: block;
       input{
@@ -235,4 +236,56 @@
      display: flex;
    }
   }
+  #isotope{
+    .isotope-menu{
+      display: flex;
+      flex-wrap: wrap;
+      button{
+        margin-bottom: 15px;
+      }
+    }
+    .item{
+      .photo{
+        img{
+          width: 100%;
+        }
+      }
+      .info{
+        .rating{
+          ul{
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+  #vision-area{
+    h2{
+      font-size: 36px!important;
+    }
+  }
+  #article{
+    .article-post__item{
+      margin-bottom: 30px;
+    }
+  }
+.home-courses{
+  overflow: hidden;
+  .tabb-pane{
+    .row{
+      display: flex;
+      flex-direction: column-reverse;
+      .featured-courses-content{
+        text-align: center;
+      }
+      .featured-courses-img{
+        margin-bottom: 36px;
+      }
+    }
+  }
 }
+}
+
+
+/// d-flex flex-column-reverse
