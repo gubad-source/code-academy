@@ -397,7 +397,7 @@ background-color: $gray-color;
 }
 
 #home-category {
-  background-image: url("../img/category_bg.jpg");
+  background-image: url("../img/shape/category_bg.jpg");
   background-position: center;
   background-size: cover;
   padding: 110px 0px;
@@ -452,7 +452,7 @@ background-color: $gray-color;
   padding: 100px 0px;
   position: relative;
   .article-bg {
-    background-image: url("../img/blog_bg.jpg");
+    background-image: url("../img/shape/blog_bg.jpg");
     position: absolute;
     left: 0;
     top: -46px;
