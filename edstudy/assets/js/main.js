@@ -208,5 +208,20 @@ function calcTotalAndCount(basket) {
     return basket;
 }
 
+let search=document.querySelector('.page-search__box__input');
+search.addEventListener('keyup',function(e){
+    // console.log(e.target.value.toLowerCase());
+let term=e.target.value.toLowerCase();
+    let text=Array.from(document.querySelectorAll('#courses .item .info .category a'));
+    text.forEach(elem => {
+        let stuff= elem.textContent.toLowerCase();
+       if(stuff.indexOf(term) !=-1){
+        elem.parentNode.parentNode.parentNode.parentNode.classList.remove('d-none');
+       }else{
+        elem.parentNode.parentNode.parentNode.parentNode.classList.add('d-none');
+       }
+       });
+})
+
    new WOW().init();
 })
