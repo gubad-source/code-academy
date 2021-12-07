@@ -1,6 +1,16 @@
 $(document).ready(function(){
 
-  
+    let navItem=document.querySelectorAll('.navbar-nav .nav-item');
+    navItem.forEach(elem=>{
+        elem.addEventListener('click',function(){
+         
+            document.querySelector('.nav-item.active').classList.remove('active');
+           
+            elem.classList.add('active');
+ 
+        })
+    })
+
     if ($('#isotope .courses').length) {
         var $grid = $('#isotope .courses').isotope({
             itemSelector: '.grid-item',
@@ -208,10 +218,21 @@ function calcTotalAndCount(basket) {
     return basket;
 }
 
-let search=document.querySelector('.page-search__box__input');
+
+
+
+
+
+   new WOW().init();
+})
+
+
+
+let search=document.querySelector('.search-engine');
 search.addEventListener('keyup',function(e){
-    // console.log(e.target.value.toLowerCase());
+    console.log(e.target.value.toLowerCase());
 let term=e.target.value.toLowerCase();
+
     let text=Array.from(document.querySelectorAll('#courses .item .info .category a'));
     text.forEach(elem => {
         let stuff= elem.textContent.toLowerCase();
@@ -221,7 +242,14 @@ let term=e.target.value.toLowerCase();
         elem.parentNode.parentNode.parentNode.parentNode.classList.add('d-none');
        }
        });
-})
 
-   new WOW().init();
+    let text2=Array.from(document.querySelectorAll('#shop-area .shop-item'));
+    text2.forEach(elem => {
+        let stuff= elem.textContent.toLowerCase();
+       if(stuff.indexOf(term) !=-1){
+        elem.parentNode.classList.remove('d-none');
+       }else{
+        elem.parentNode.classList.add('d-none');
+       }
+    });
 })
