@@ -204,6 +204,29 @@ $(document).ready(function () {
     });
   });
 
+  let filterBtn = document.querySelectorAll(".widget-tag li a");
+  let shopProducts = document.querySelectorAll(".shop-item");
+
+  for (let i = 0; i < filterBtn.length; i++) {
+    filterBtn[i].addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const filter = e.target.dataset.filter;
+      //  console.log(filter);
+      shopProducts.forEach((product) => {
+        if (filter == "all") {
+          product.style.display = "block";
+        } else {
+          if(product.classList.contains(filter)){
+            product.parentNode.style.display = "block";
+          }else{
+            product.parentNode.style.display = "none";
+          }
+        }
+      });
+    });
+  }
+
   function calcTotalAndCount(basket) {
     basket.count = 0;
     basket.total = 0;
@@ -214,44 +237,47 @@ $(document).ready(function () {
 
     return basket;
   }
-  let shopCategorySearch=document.querySelector('.shop-action__form__select')
-  shopCategorySearch.addEventListener('change',function(e){
-    let shopTarget=e.target.value.toLowerCase();
+  let shopCategorySearch = document.querySelector(".shop-action__form__select");
+  shopCategorySearch.addEventListener("change", function (e) {
+    let shopTarget = e.target.value.toLowerCase();
 
     let text2 = Array.from(document.querySelectorAll("#shop-area [data-id]"));
-  text2.forEach((elem) => {
-    let stuff = elem.dataset.id.toLowerCase();
-    if (stuff.indexOf(shopTarget) != -1) {
-      elem.classList.remove("d-none");
-    } else {
-      elem.classList.add("d-none");
-    }
+    text2.forEach((elem) => {
+      let stuff = elem.dataset.id.toLowerCase();
+      if (stuff.indexOf(shopTarget) != -1) {
+        elem.classList.remove("d-none");
+      } else {
+        elem.classList.add("d-none");
+      }
+    });
   });
-  })
-  let categorySearch=document.querySelector('.page-search__box__select');
-  categorySearch.addEventListener('change',function(e){
-  let valSearch=e.target.value.toLowerCase();
-  let text = Array.from(document.querySelectorAll("#courses .courses [data-id]"));
-  text.forEach((elem) => {
-    
-    let stuff = elem.dataset.id.toLowerCase();
-    if (stuff.indexOf(valSearch) != -1) {
-      elem.classList.remove("d-none");
-    }else {
-      elem.classList.add("d-none");
-    }
+  let categorySearch = document.querySelector(".page-search__box__select");
+  categorySearch.addEventListener("change", function (e) {
+    let valSearch = e.target.value.toLowerCase();
+    let text = Array.from(
+      document.querySelectorAll("#courses .courses [data-id]")
+    );
+    text.forEach((elem) => {
+      let stuff = elem.dataset.id.toLowerCase();
+      if (stuff.indexOf(valSearch) != -1) {
+        elem.classList.remove("d-none");
+      } else {
+        elem.classList.add("d-none");
+      }
+    });
+    let text4 = Array.from(
+      document.querySelectorAll("#event-courses [data-id]")
+    );
+    text4.forEach((elem) => {
+      let stuff = elem.dataset.id.toLowerCase();
+      if (stuff.indexOf(valSearch) != -1) {
+        elem.classList.remove("d-none");
+      } else {
+        elem.classList.add("d-none");
+      }
+    });
   });
-  let text4 = Array.from(document.querySelectorAll("#event-courses [data-id]"));
-  text4.forEach((elem) => {
-    let stuff = elem.dataset.id.toLowerCase();
-    if (stuff.indexOf(valSearch) != -1) {
-      elem.classList.remove("d-none");
-    } else {
-      elem.classList.add("d-none");
-    }
-  });
- 
-  })
+
   new WOW().init();
 });
 
@@ -308,4 +334,3 @@ search.addEventListener("keyup", function (e) {
     }
   });
 });
-
