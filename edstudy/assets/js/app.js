@@ -14,12 +14,15 @@ $(window).on("load",function(){
   
   });
   
+ 
+  
   hamburger.addEventListener('click',function(){
    
       sidebarUnderlay.style.width='100%'
       sidebar.style.width='79%'
     closeSidebar.classList.toggle('active')
     })
+    
 
     document.querySelectorAll('ul .open').forEach(elem=>{
       elem.addEventListener('click',(function (e) {

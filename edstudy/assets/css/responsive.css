@@ -5,6 +5,10 @@
   display: none;
 }
 
+#lessons .lessons .lesson-item .info {
+  bottom: 15px;
+}
+
 .navbar-nav .nav-item ul li a{
 text-decoration: none;
 font-weight: 700;
@@ -62,6 +66,10 @@ animation: loader 1.2s linear infinite;
 }
 
 @media screen and (max-width: 678px) {
+  .isotope-menu{
+    margin: auto;
+    margin-bottom: 30px;
+  }
 
   .hamburger{
     display: block;
@@ -101,6 +109,9 @@ animation: loader 1.2s linear infinite;
   .sidebar .sidebar-header {
     display: flex;
     justify-content: space-between;
+  }
+  .sidebar .sidebar-header .sidebar-logo{
+    margin: 0 0 19px 0;
   }
   .sidebar .sidebar-header .sidebar-logo img {
     padding: 30px 0px 0px 25px;
