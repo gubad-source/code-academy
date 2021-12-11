@@ -5,6 +5,13 @@
   display: none;
 }
 
+.navbar-nav .nav-item ul li a{
+text-decoration: none;
+font-weight: 700;
+}
+.blog-details__content__images img{
+  width: 96%;
+}
 
 .preloader-container{
   width: 100%;
@@ -53,7 +60,6 @@ animation: loader 1.2s linear infinite;
     transform: rotateY(360deg);
   }
 }
-
 
 @media screen and (max-width: 678px) {
 
@@ -104,6 +110,10 @@ animation: loader 1.2s linear infinite;
     padding: 10px 30px;
     font-size: 33px;
     color: white;
+    transition: 0.6s all ease;
+  }
+  .sidebar .sidebar-header .sidebar-close i.active{
+    transform: rotate(360deg);
   }
 
   .sidebar ul {
@@ -145,6 +155,16 @@ animation: loader 1.2s linear infinite;
     text-align: center;
     font-size: 20px;
   }
+
+
+  .sidebar .open i{
+transition: 0.6s ease all;
+  }
+  .sidebar .open i.active{
+    transform: rotate(360deg);
+  }
+
+
   .sidebar-footer {
     display: flex;
     justify-content: center;
